@@ -1,0 +1,13 @@
+owner = SPA
+controller = SPA
+add_core = ZAN
+trade_goods = fish
+terrain = savanna
+life_rating = 35
+naval_base = 1
+colonial = 2
+1836.1.2 = {
+  owner = ZAN
+  controller = ZAN
+  colonial = 0
+}

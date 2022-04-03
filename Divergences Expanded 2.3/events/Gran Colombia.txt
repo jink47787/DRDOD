@@ -1,0 +1,31 @@
+country_event = { #Congress of Gran Colombia
+	id = 600007
+	title = "600007.T"
+	desc = "600007.D"
+	picture = "Administration"
+	is_triggered_only = yes
+
+	option = {
+		name = "600007.A"
+		set_country_flag = clm_arcadia_focus
+		primary_culture = mexican
+		add_accepted_culture = central_american
+		capital = 2172
+		2172 = { life_rating = 10 }
+	}
+	option = {
+		name = "600007.B"
+		set_country_flag = clm_ameriga_focus
+		primary_culture = granadan
+		add_accepted_culture = central_american
+		capital = 2254
+		2254 = { life_rating = 10 }
+	}
+	option = {
+		name = "600007.C"
+		set_country_flag = clm_stability_focus
+		2191 = { life_rating = 10 }
+		INC = { all_core = { remove_core = CLM } }
+		INC = { all_core = { remove_core = GRA } }
+	}
+}

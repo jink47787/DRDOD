@@ -1,0 +1,19 @@
+country_event = {
+	id = 410070
+	title = "BOHR.T"
+	desc = "BOHR.D"
+	picture = "rhapsody"
+
+	trigger = {
+	OR = { tag = HLR tag = BOH}
+	owns = 625
+	romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+	name = "410070.A"
+	prestige = 2
+	}
+}

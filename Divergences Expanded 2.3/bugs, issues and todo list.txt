@@ -1,0 +1,68 @@
+##Known bugs
+#
+#Update descriptions of colonial purchase events to fit countries more
+#
+##To-do List
+#
+#Clean up China CB's again probably
+#Clean up useless files from HPM/PDM Ports
+#
+#Rework CB's and Infamy:
+#Set infamy decay at 0.2 at peace, 0.04 at war
+#Starting infamy decay bonus to always last for first 10-15 years only
+#Set Sanctions at 35 infamy
+#Add decision to gain faster justification for infamy
+#Make CB's have 100% chance of being discovered
+#
+#Normal CB's
+#
+#1 Acquire Core CB (0 Infamy)
+#2 Acquire Puppet's Cores CB's (OPM 1.5 infamy, Normal 4.5 infamy)
+#3 Conquest CB's (Minor 6 infamy, Normal 15 infamy, Major 24 infamy)
+#2 Acquire state CB's (OPM 3 infamy, Normal 9 infamy)
+#2 Acquire substate CB's (OPM 3 infamy, Normal 9 infamy)
+#
+#2 Place in Sun CB's (OPM 1.5 infamy, Normal 4.5 infamy)
+#8 Establish Protectorate CB's (Minor 6/4.5/3 infamy, Normal 15/10.5/6 infamy, Major 24/15 infamy)
+#6 Demand Consession CB's (OPM 3/2.1/1.2 infamy, Normal 9/6/3 infamy)
+#1 Unequal Treaty CB (4.5/3/1.5 infamy) #Unsure
+#
+#2 Liberate Country CB's (Normal 10.5 infamy, Major 21 infamy)
+#1 Free peoples CB (Normal 6 infamy)
+#
+#3 Make Puppet CB's (Minor 6 infamy, Normal 10.5 infamy, Major 15 infamy)
+#1 Liberate Puppet CB (1.5 Infamy)
+#2 Create Satellite CB's (Normal 15 Infamy, Major 30 Infamy)
+#3 Take Puppet CB's (Minor 9 Infamy, Normal 15 Infamy, Major 24 Infamy)
+#
+#3 Add to Sphere CB's (Minor 1.5 Infamy, Normal 3 Infamy, Major 4.5 Infamy)
+#3 Take from Sphere CB's (Minor 1.5 Infamy, Normal 3 Infamy, Major 4.5 Infamy)
+#
+#1 War Reparations CB (1.5 infamy)
+#1 Humiliate CB (1.5 infamy)
+#1 Cuck down to Size CB (15 Infamy)
+#
+#Special CB's
+#
+#1 Great War CB (0 infamy, special) #Auto-added in Great Wars (Is War Reperations and Cuck down to Size)
+#1 Status Quo CB (0 infamy, special) #Auto-added in some cases
+#1 Containment (0 Infamy, -5 on Successful Containment) #Free wargoal on anyone over 25 Infamy (Is Humiliate and Cuck down to Size)
+#1 Major Containment (0 Infamy, -10 on Successful Containment) #Free wargoal on anyone who gets Sanctions, will remove Sanctions and prevents Sanctions for the defeted country for 5 years or until they go over 40 Infamy (Is Humiliate, War Reparations and Cuck down to Size)
+#1 War of Unification CB (0 Infamy) #Free Wargoal for Cultural Union Cores for GP's once nationalism and imperialism is researched (e.g Germany, Italy, Russia, Yugoslavia, China, India, Indonesia, Scandinavia, Batavia)
+#
+#2 Liberate Communist Country CB's (Normal 6 infamy, Major 12 infamy) #Requires Proletarian Dictatorship
+#3 Make Communist Puppet CB's (Minor 4.5 infamy, Normal 7.5 infamy, Major 10.5 infamy) #Requires Proletarian Dictatorship
+#2 Create Communist Satellite CB's (Normal 10.5 Infamy, Major 21 Infamy) #Requires Proletarian Dictatorship
+#3 Take Communist Puppet CB's (Minor 6 Infamy, Normal 10.5 Infamy, Major 15 Infamy) #Requires Proletarian Dictatorship
+#
+#3 Add to Communist Sphere CB's (Minor 0.3 Infamy, Normal 1.5 Infamy, Major 3 Infamy) #Requires Proletarian Dictatorship
+#3 Take from Communist Sphere CB's (Minor 0.3 Infamy, Normal 1.5 Infamy, Major 3 Infamy) #Requires Proletarian Dictatorship
+#
+#Transfer CB'S
+#
+#1 Negotiated Land Transfer CB (0 Infamy)
+#1 Negotiated Sphere Transfer CB (0 Infamy)
+#3 Transfer Puppet CB's (Minor 0 Infamy, Normal 2.5 Infamy, Major 5 Infamy)
+#
+#Note: Becuase of Chance of Discovery being changed to 100%, these infamy amounts will change to accomodate the fact that you will no longer get lucky
+#

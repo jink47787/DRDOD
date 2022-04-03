@@ -1,0 +1,10 @@
+owner = AMT
+controller = AMT
+add_core = AMT
+add_core = ETH
+trade_goods = cattle
+terrain = semidesert
+life_rating = 35
+1836.1.2 = {
+  remove_core = ETH
+}

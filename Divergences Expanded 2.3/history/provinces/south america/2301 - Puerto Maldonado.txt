@@ -1,0 +1,4 @@
+add_core = TAP
+trade_goods = fruit
+terrain = jungle
+life_rating = 15

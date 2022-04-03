@@ -1,0 +1,14 @@
+owner = IRQ
+controller = IRQ
+add_core = IRQ
+add_core = ARY
+add_core = PER
+add_core = ZND
+trade_goods = fish
+life_rating = 35
+naval_base = 1
+1836.1.2 = {
+  owner = ZND
+  controller = ZND
+  remove_core = IRQ
+}

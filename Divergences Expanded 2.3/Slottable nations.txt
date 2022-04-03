@@ -1,0 +1,69 @@
+#As of 2.0
+#
+#Vinland
+#Belgium Confederacy
+#Plantagenia
+#Gran Colombia
+#Qingqiu
+#Inca
+#Amazonie
+#Lothraginia
+#Beornia
+#Spain
+#Aragon
+#Dual Monarchy
+#Burgundy
+#Bohemia
+#Scandinavia
+#Poland-Lithuania
+#Hungary
+#Muscovy/Novgorod
+#Ottomans
+#Batavia
+#Ethiopia
+#Mughals
+#Taiping
+#Qing
+#Japan
+#Zhourao
+#Egypt
+#Iraq
+#Tehran
+#Korea
+#(Maybe) Dzungar
+#(Maybe) Afghanistan
+#
+#Nations that might be mutually exclusive with one another (Italy):
+#
+#Savoy
+#Genoa
+#Lombardy
+#Venice
+#Etrutia
+#Papal States
+#
+#Nations that might be mutually exclusive with one another (Germany):
+#
+#Hanover
+#Bavaria
+#Württemberg
+#Switzerland
+#Austria
+#
+#Nations that might be mutually exclusive with one another (Balkans):
+#
+#Illyria
+#Serbia
+#Macedonia
+#Bulgaria
+#Wallachia/Moldova
+#Greece
+#
+#Nations that might be mutually exclusive with one another (Indochina):
+#
+#Burma
+#Vietnam
+#Thailand
+#Khmer
+#Champa
+#

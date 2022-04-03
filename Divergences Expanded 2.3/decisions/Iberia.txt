@@ -1,0 +1,440 @@
+political_decisions = {
+	#Aragon
+	establish_greater_aragon = {
+		potential = {
+			OR = {
+				tag = ARA
+				tag = CAT
+			}
+			NOT = { has_country_flag = greater_aragon }
+			IBR = { exists = no }
+		}
+		allow = {
+			owns = 507
+			owns = 490
+			CAT = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			SPA_506 = { add_core = ARA } #Cartagena
+			SPA_506 = { add_core = CAT }
+			SPA_490 = { add_core = ARA } #Cuenca
+			SPA_490 = { add_core = CAT }
+			ESK_1 = { add_core = ARA } #Navarra
+			ESK_1 = { add_core = CAT }
+			ESK_1 = { add_core = SPA }
+			set_country_flag = greater_aragon
+			any_country = {
+				limit = {
+					primary_culture = basque
+					vassal_of = THIS
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+		}
+	}
+
+	abandon_italy = {
+		potential = {
+			tag = ARA
+		}
+		allow = {
+			year = 1840
+			NOT = { owns = 754 }
+		}
+		effect = {
+			ARA = { all_core = { remove_core = ARA } }
+			SAR_765 = { add_core = CAT }
+			SIC = {
+				all_core = {
+					limit = {
+						owned_by = THIS
+					}
+					secede_province = SIC
+				}
+			}
+			change_tag = CAT
+			CAT = {
+				primary_culture = catalan
+				add_accepted_culture = basque
+				add_accepted_culture = castilian
+				add_accepted_culture = maltese
+				remove_accepted_culture = south_italian
+			}
+			SPA_506 = { add_core = CAT } #Cartagena
+			SPA_490 = { add_core = CAT } #Cuenca
+			ESK_1 = { add_core = CAT } #Navarra
+			any_country = {
+				limit = {
+					primary_culture = basque
+					vassal_of = THIS
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			badboy = -5
+		}
+		ai_will_do = {
+      factor = 0
+    }
+	}
+
+	abandon_iberia = {
+		potential = {
+			tag = ARA
+		}
+		allow = {
+			year = 1840
+			NOT = { owns = 498 }
+		}
+		effect = {
+			ARA = { all_core = { remove_core = ARA } }
+			SAR_765 = { add_core = SIC }
+			CAT = {
+				all_core = {
+					limit = {
+						owned_by = THIS
+						OR = {
+							is_core = IBR
+							province_id = 464
+						}
+					}
+					secede_province = CAT
+				}
+			}
+			change_tag = SIC
+			SIC = {
+				primary_culture = south_italian
+				add_accepted_culture = maltese
+				add_accepted_culture = catalan
+				remove_accepted_culture = basque
+			}
+			badboy = -5
+		}
+		ai_will_do = {
+      factor = 0
+    }
+	}
+
+	#Iberia
+	form_iberia = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = NAV
+				tag = ARA
+				tag = POR
+				tag = CAT
+			}
+			NOT = { has_global_flag = iberian_union }
+			NOT = { has_global_flag = mancomunidad }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			prestige = 30
+			nationalism_n_imperialism = 1
+			IBR = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 20
+			set_global_flag = iberian_union
+			any_country = {
+				limit = {
+					OR = {
+						tag = CAT
+						tag = ARA
+						tag = NAV
+						tag = POR
+						tag = SPA
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			464 = { add_core = IBR }
+			502 = { add_core = IBR }
+			POR_2134 = { add_core = IBR }
+			add_accepted_culture = catalan
+			add_accepted_culture = maltese
+			add_accepted_culture = castilian
+			add_accepted_culture = portuguese
+			add_accepted_culture = basque
+			change_tag = IBR
+		}
+	}
+
+	forward_the_aragonese_claims = {
+		potential = {
+			tag = IBR
+			NOT = { has_country_flag = ibr_aragon_claims }
+		}
+		allow = {
+			SRD = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			SIC = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MLT = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SRD = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = ibr_aragon_claims
+		}
+	}
+
+	integrating_napoli = {
+		potential = {
+			tag = IBR
+			NOT = { has_country_flag = ibr_integrating_napoli }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			SRD = {
+				all_core = {
+					owner = {
+						tag = THIS
+					}
+				}
+			}
+			SIC = {
+				all_core = {
+					owner = {
+						tag = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = ibr_integrating_napoli
+			add_accepted_culture = south_italian
+		}
+	}
+
+	ibr_push_into_occitania = {
+		potential = {
+			tag = IBR
+			NOT = { has_country_flag = occitan_claims }
+			NOT = { has_country_flag = ibr_aragon_claims }
+		}
+		allow = {
+			owns = 464
+		}
+		effect = {
+			OCC = { all_core = { add_core = IBR } }
+		}
+	}
+
+	ibr_integrate_occitania = {
+		potential = {
+			tag = IBR
+			NOT = { has_country_flag = occitans_integrated }
+			has_country_flag = occitan_claims
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			owns = 458
+			owns = 455
+			owns = 461
+			owns = 467
+			owns = 451
+		}
+		effect = {
+			set_country_flag = occitans_integrated
+			add_accepted_culture = provencal
+		}
+	}
+
+	#Hispanic Commonwealth
+	mancomunidad_de_naciones = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = POR
+			}
+			NOT = { has_global_flag = mancomunidad }
+			NOT = { has_global_flag = iberian_union }
+	}
+
+	allow = {
+		nationalism_n_imperialism = 1
+		2264 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2254 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2247 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2191 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2209 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2172 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2170 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2163 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		2156 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		137 = {
+			owner = {
+				OR = {
+					tag = THIS
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_global_flag = mancomunidad
+		any_country = {
+			limit = {
+				OR = {
+					tag = LST
+					tag = MEX
+					tag = UCA
+					tag = CUB
+					tag = GRA
+				}
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		annex_to = THIS
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = CLM
+					is_core = CUB
+				}
+			}
+			add_core = HIS
+		}
+		add_accepted_culture = mexican
+		add_accepted_culture = lusitanian
+		add_accepted_culture = granadan
+		add_accepted_culture = central_american
+		add_accepted_culture = caribeno
+		change_tag = HIS
+		prestige = 50
+		}
+	}
+
+	his_move_capital = {
+		potential = {
+			tag = HIS
+			NOT = { has_country_flag = his_capital }
+		}
+
+		allow = {
+			revolution_n_counterrevolution = 1
+			expressionism = 1
+			social_science = 1
+		}
+
+		effect = {
+			country_event = 500041
+			set_country_flag = his_capital
+		}
+	}
+}

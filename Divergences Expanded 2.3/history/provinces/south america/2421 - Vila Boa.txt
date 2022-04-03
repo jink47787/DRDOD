@@ -1,0 +1,12 @@
+owner = AMA
+controller = AMA
+add_core = AMA
+add_core = EQN
+trade_goods = tropical_wood
+terrain = savanna
+life_rating = 35
+1836.1.2 = {
+	owner = EQN
+	controller = EQN
+	remove_core = AMA
+}

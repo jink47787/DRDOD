@@ -1,0 +1,13 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+add_core = AZT
+add_core = MEX
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+1836.1.2 = {
+  owner = AZT
+  controller = AZT
+  remove_core = MEX
+}

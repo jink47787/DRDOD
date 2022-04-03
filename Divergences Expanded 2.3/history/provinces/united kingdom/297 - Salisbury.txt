@@ -1,0 +1,17 @@
+owner = DUA
+controller = DUA
+add_core = DUA
+add_core = ENL
+trade_goods = grain
+life_rating = 35
+fort = 1
+state_building = {
+	level = 3
+	building = clipper_shipyard
+	upgrade = yes
+}
+1836.1.2 = {
+  owner = ENL
+  controller = ENL
+  remove_core = DUA
+}

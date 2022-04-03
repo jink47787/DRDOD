@@ -1,0 +1,12 @@
+owner = SPA
+controller = SPA
+add_core = BUR
+trade_goods = grain
+life_rating = 40
+naval_base = 1
+colonial = 2
+1836.1.2 = {
+  owner = BUR
+  controller = BUR
+  colonial = 0
+}

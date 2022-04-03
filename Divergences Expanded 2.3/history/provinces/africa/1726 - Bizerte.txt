@@ -1,0 +1,14 @@
+owner = ARA
+controller = ARA
+add_core = ARA
+add_core = TUN
+add_core = MGH
+trade_goods = grain
+life_rating = 30
+1836.1.2 = {
+  owner = TUN
+  controller = TUN
+  remove_core = ARA
+  remove_core = MGH
+  colonial = 0
+}

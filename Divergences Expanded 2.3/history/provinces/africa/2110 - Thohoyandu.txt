@@ -1,0 +1,9 @@
+owner = TRN
+controller = TRN
+add_core = TRN
+add_core = MAT
+add_core = BTV
+add_core = SAF
+terrain = mountain
+trade_goods = wool
+life_rating = 35

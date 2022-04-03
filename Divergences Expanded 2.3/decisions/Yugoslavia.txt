@@ -1,0 +1,172 @@
+political_decisions = {
+	form_yugoslavia = {
+		potential = {
+			NOT = {	YUG = { exists = yes }	}
+			OR = {
+				primary_culture = croat
+				primary_culture = serb
+				primary_culture = bulgarian
+				primary_culture = slovene
+				primary_culture = bosniak
+				primary_culture = albanian
+			}
+			NOT = { has_country_flag = macedon_greece }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			NOT = { is_vassal = yes }
+			771 = { owned_by = THIS }
+			783 = { owned_by = THIS }
+			2583 = { owned_by = THIS }
+			794 = { owned_by = THIS }
+			780 = { owned_by = THIS }
+			798 = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 20
+			change_tag = YUG
+			add_accepted_culture = croat
+			add_accepted_culture = serb
+			add_accepted_culture = slovene
+			add_accepted_culture = bosniak
+			remove_accepted_culture = turkish
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = 11101
+			}
+		}
+	}
+
+	claim_albania = {
+		potential = {
+			tag = YUG
+			NOT = { has_country_flag = yugalbania }
+		}
+		allow = {
+			NOT = { war = yes }
+			ALB = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+			YUG = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = yugalbania
+			add_accepted_culture = albanian
+			ALB = {
+				all_core = {
+					add_core = YUG
+				}
+			}
+		}
+	}
+
+	claim_bulgaria = {
+		potential = {
+			tag = YUG
+			NOT = { has_country_flag = yugbulgaria }
+		}
+		allow = {
+			NOT = { war = yes }
+			BUL = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+			YUG = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = yugbulgaria
+			add_accepted_culture = bulgarian
+			BUL = {
+				all_core = {
+					add_core = YUG
+				}
+			}
+		}
+	}
+
+	claim_greeks = {
+		potential = {
+			OR = {
+				tag = YUG
+				tag = SER
+			}
+			NOT = { has_country_flag = yuggreece }
+		}
+		allow = {
+			NOT = { war = yes }
+			YUG = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			owns = 805
+			owns = 806
+			owns = 832
+		}
+		effect = {
+			prestige = 10
+			set_country_flag = yuggreece
+			add_accepted_culture = greek
+			TUR_819 = {
+				add_core = SER
+				add_core = YUG
+			}
+			TUR_806 = {
+				add_core = SER
+				add_core = YUG
+			}
+			TUR_832 = {
+				add_core = SER
+				add_core = YUG
+			}
+		}
+	}
+
+	claim_venice_yugo = {
+		potential = {
+			OR = {
+				tag = YUG
+				primary_culture = croat
+				primary_culture = slovene
+			}
+			NOT = { primary_culture = bulgarian }
+			NOT = { accepted_culture = venetian }
+		}
+		allow = {
+			SLO = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						is_core = VEN
+					}
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = venetian
+			AUS_729 = { add_core = THIS }
+			VEN_730 = { add_core = THIS }
+			734 = { add_core = THIS }
+		}
+	}
+}

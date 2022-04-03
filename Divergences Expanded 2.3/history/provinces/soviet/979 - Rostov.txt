@@ -1,0 +1,9 @@
+owner = ASK
+controller = ASK
+add_core = RUS
+add_core = ASK
+add_core = CRI
+add_core = TAR
+trade_goods = coal
+naval_base = 1
+life_rating = 40

@@ -1,0 +1,11 @@
+owner = CAM
+controller = CAM
+add_core = SIA
+add_core = CAM
+trade_goods = opium
+life_rating = 35
+1836.1.2 = {
+  owner = SIA
+  controller = SIA
+  remove_core = CAM
+}

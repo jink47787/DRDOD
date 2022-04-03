@@ -1,0 +1,7 @@
+owner = NAV
+controller = NAV
+add_core = NAV
+add_core = IBR
+trade_goods = iron
+naval_base = 1
+life_rating = 40

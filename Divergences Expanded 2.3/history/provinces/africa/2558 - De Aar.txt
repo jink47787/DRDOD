@@ -1,0 +1,9 @@
+owner = LWE
+controller = LWE
+add_core = LWE
+add_core = BSH
+add_core = BTV
+add_core = SAF
+trade_goods = fruit
+life_rating = 35
+terrain = savanna

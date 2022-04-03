@@ -1,0 +1,10 @@
+owner = DAR
+controller = DAR
+add_core = DAR
+add_core = FUN
+trade_goods = grain
+terrain = semidesert
+life_rating = 30
+1836.1.2 = {
+  remove_core = FUN
+}

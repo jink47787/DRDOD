@@ -1,0 +1,14 @@
+owner = LOT
+controller = LOT
+add_core = LOT
+add_core = AVA
+trade_goods = sulphur
+terrain = savanna
+life_rating = 35
+colonial = 2
+1836.1.2 = {
+	owner = AVA
+	controller = AVA
+	remove_core = LOT
+  colonial = 0
+}

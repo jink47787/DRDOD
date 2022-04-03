@@ -1,0 +1,57 @@
+
+country_event = { #Hispania move capital
+	id = 500041
+	title = "500041.T"
+	desc = "500041.DE"
+	picture = "Capitol"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "500041.A"
+		capital = 2209
+		prestige = 10
+		2209 = {
+			life_rating = 10
+		}
+	}
+	option = {
+		name = "500041.B"
+		capital = 137
+		prestige = 10
+		137 = {
+			life_rating = 10
+		}
+	}
+	option = {
+		name = "500041.C"
+		capital = 2172
+		prestige = 10
+		2172 = {
+			life_rating = 10
+		}
+	}
+	option = {
+		name = "500041.D"
+		capital = 2204
+		prestige = 10
+		2204 = {
+			life_rating = 13
+		}
+	}
+	option = {
+		name = "500041.E"
+		capital = 521
+		prestige = 30
+		521 = {
+			life_rating = 15
+		}
+	}
+	option = {
+		name = "500041.F"
+		prestige = 30
+		487 = {
+			life_rating = 10
+		}
+	}
+}

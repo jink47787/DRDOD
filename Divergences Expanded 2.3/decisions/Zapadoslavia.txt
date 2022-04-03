@@ -1,0 +1,82 @@
+political_decisions = {
+  form_zapaoslavia = {
+    potential = {
+      OR = {
+        primary_culture = czech
+        primary_culture = polish
+        primary_culture = slovak
+      }
+      NOT = { has_country_flag = treaty_hadiach }
+      NOT = { has_country_flag = jagiellonian }
+      NOT = { has_country_flag = lesser_jagiellonian }
+      NOT = { has_country_flag = wsf_formed }
+      NOT = { tag = CAE }
+      NOT = { tag = HLR }
+      NOT = { tag = GER }
+    }
+    allow = {
+      owns = 682
+      owns = 625
+      owns = 631
+      owns = 633
+      owns = 703
+      owns = 706
+      owns = 712
+      owns = 699
+      nationalism_n_imperialism = 1
+    }
+    effect = {
+      prestige = 25
+      POL = { all_core = { add_core = WSF } }
+      SLV = { all_core = { add_core = WSF } }
+      BOH = {
+        all_core = {
+          limit = {
+            NOT = { is_core = GER }
+          }
+          add_core = WSF
+        }
+      }
+      SAX = { all_core = { add_core = WSF } }
+      PRU_546 = { add_core = WSF }
+      PRU_695 = { add_core = WSF }
+      add_accepted_culture = slovak
+      add_accepted_culture = polish
+      add_accepted_culture = czech
+      change_tag = WSF
+      set_country_flag = wsf_formed
+      any_country = {
+				limit = {
+          OR = {
+					  primary_culture = polish
+            primary_culture = czech
+            primary_culture = slovak
+            tag = SAX
+          }
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+    }
+  }
+
+  zap_integrate_baltics = {
+    potential = {
+      tag = WSF
+      NOT = { has_country_flag = zap_baltic_integration }
+    }
+    allow = {
+      revolution_n_counterrevolution = 1
+      owns = 360
+      owns = 364
+      owns = 354
+    }
+    effect = {
+      set_country_flag = zap_baltic_integration
+      add_accepted_culture = lithuanian
+      add_accepted_culture = latvian
+      add_accepted_culture = estonian
+      add_accepted_culture = pomeranian
+    }
+  }
+}

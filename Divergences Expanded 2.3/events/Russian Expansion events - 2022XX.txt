@@ -1,0 +1,47 @@
+country_event = {
+    id = 202201
+    title = "RUS_EXP_202201_t"
+    desc = "RUS_EXP_202201_d"
+    picture = "administration"
+
+    is_triggered_only = yes
+
+    #Each focus adds some cores. Perhaps the AI weights should depend on the relative strength of Scandinavia, the Commonwealth, Bohemia, Ottomans, etc. Mostly by region.
+
+    #Steppe/Caucasus focus
+    option = {
+        name = "202201.B"
+        set_country_flag = black_sea_focus
+        RUS_965 = { add_core = RUS } #Odessa
+        GEO_1 = { add_core = RUS } #Phasis
+        RUS_1090 = { add_core = RUS } #Georgia
+        RUS_1098 = { add_core = RUS } #Armenia
+        AZB_1104 = { add_core = RUS } #Sheki
+        RUS_1102 = { add_core = RUS } #Azerbaijan
+        RUS_1182 = { add_core = RUS } #Uralsk
+        RUS_1184 = { add_core = RUS } #Astana
+        RUS_1185 = { add_core = RUS } #Zhetysu
+        ai_chance = {
+             factor = 50
+        }
+    }
+
+    #Pan-slavic/Baltic Focus
+    option = {
+        name = "202201.C"
+        set_country_flag = baltic_sea_focus
+        RUS_947 = { add_core = RUS } #Orsha
+        RUS_977 = { add_core = RUS } #Kursk
+        RUS_958 = { add_core = RUS } #Kiev
+        RUS_718 = { add_core = RUS } #Minsk
+        RUS_354 = { add_core = RUS } #Latvia
+        RUS_349 = { add_core = RUS } #Estonia
+        RUS_340 = { add_core = RUS } #Eastern Finland
+        SCA_345 = { add_core = RUS } #Western Finland
+        RUS_336 = { add_core = RUS } #Northern Finland
+        ai_chance = {
+             factor = 50
+        }
+    }
+
+}

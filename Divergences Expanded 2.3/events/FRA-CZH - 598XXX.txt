@@ -1,0 +1,70 @@
+# Bridge over Salzach
+country_event = {
+	id = 598000
+	title = "EVTNAME598000"
+	desc = "EVTDESC598000"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA598000"
+		relation = {
+			who = BOH
+			value = 350
+		}
+		relation = {
+			who = BRG
+			value = -100
+		}
+		relation = {
+			who = SCA
+			value = -100
+		}
+		relation = {
+			who = ARA
+			value = -100
+		}
+		prestige = 15
+		BOH = { prestige = 15 }
+		set_global_flag = salzach
+		create_alliance = BOH
+		ai_chance = {
+			factor = 75
+			modifier = {
+					factor = 0.25
+					has_country_flag = meddle_in_italy
+				}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB598000"
+		prestige = -15
+		BOH = { prestige = -15 }
+		relation = {
+			who = BOH
+			value = -200
+		}
+		relation = {
+			who = BRG
+			value = 20
+		}
+		relation = {
+			who = SCA
+			value = 20
+		}
+		relation = {
+			who = ARA
+			value = 20
+		}
+		set_global_flag = salzachrefused
+		ai_chance = {
+			factor = 25
+			modifier = {
+					factor = 0
+					NOT = { has_country_flag = meddle_in_italy }
+				}
+		}
+	}
+}

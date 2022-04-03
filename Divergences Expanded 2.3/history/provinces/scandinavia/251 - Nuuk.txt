@@ -1,0 +1,14 @@
+owner = SCA
+controller = SCA
+add_core = SCA
+add_core = NUN
+add_core = GRN
+trade_goods = fish
+life_rating = 15
+colonial = 2
+1836.1.2 = {
+	owner = GRN
+	controller = GRN
+	remove_core = SCA
+  colonial = 0
+}

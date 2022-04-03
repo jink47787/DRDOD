@@ -1,0 +1,30 @@
+country_event = {
+	id = 500051
+	title = "500051.T"
+	desc = "500051.D"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "500051.A"
+		set_country_flag = ita_latin_focus
+		FRA_467 = { add_core = ITA }
+		FRA_461 = { add_core = ITA }
+		FRA_451 = { add_core = ITA }
+		502 = { add_core = ITA }
+		1726 = { add_core = ITA }
+		1725 = { add_core = ITA }
+		ai_chance = { factor = 50 }
+	}
+
+	option = {
+		name = "500051.B"
+		set_country_flag = ita_adriatic_focus
+		add_accepted_culture = slovene
+		remove_accepted_culture = catalan
+		AUS_736 = { add_core = ITA }
+		AUS_780 = { add_core = ITA }
+		2582 = { add_core = ITA }
+		ai_chance = { factor = 50 }
+	}
+}

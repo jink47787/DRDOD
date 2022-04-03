@@ -1,0 +1,19 @@
+owner = AMA
+controller = AMA
+add_core = LOT
+add_core = ATL
+add_core = AMA
+trade_goods = sulphur
+life_rating = 40
+naval_base = 2
+state_building = {
+	level = 1
+	building = clipper_shipyard
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = ATL
+	controller = ATL
+	remove_core = AMA
+  remove_core = LOT
+}

@@ -1,0 +1,516 @@
+political_decisions = {
+	# Germany
+	form_grossdeutschland = {
+	picture = Germania
+		potential = {
+			OR = {
+				is_culture_group = germanic
+				tag = CAE
+			}
+			NOT = {
+				exists = HLR
+				exists = GER
+			}
+		}
+
+		allow = {
+			war = no
+			prestige = 80
+			OR = {
+				NOT = { tag = CAE }
+				mass_politics = 1
+			}
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = GER
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = rheinish
+			add_accepted_culture = pomeranian
+			add_accepted_culture = swiss
+			add_accepted_culture = lower_danubian
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 11101
+			}
+			#Prussia
+			PRU = {
+				all_core = {
+					add_core = GER
+				}
+			}
+			#Alsace-Lorraine
+			FRA_412 = {
+				add_core = GER
+			}
+			capital = 564
+			country_event = 123110
+		}
+	}
+
+	#Elbians
+	form_elbian_confederation = {
+		potential = {
+			tag = BOH
+			NOT = { has_country_flag = jagiellonian }
+		}
+		allow = {
+			state_n_government = 1
+			OLD = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			BRE = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			HAN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			LIP = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			HEK = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			BRA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			THU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			HOL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			POM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			BOH = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = cae_formed
+			BOH = { all_core = { add_core = CAE } }
+			PRU_546 = { add_core = CAE }	#Hinterpommern
+			SCA_544 = { add_core = CAE }	#Mecklenburg
+			HOL_369 = { add_core = CAE }	#Holstein
+			HAN_532 = { add_core = CAE }	#Luneburg
+			HAM_528 = { add_core = CAE }	#Hanover
+			SAX_1 = { add_core = CAE }		#Thuringia
+			PRU_581 = { add_core = CAE }  #Westfalen
+			HAN_534 = { add_core = CAE }	#East Frisia
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = pomeranian
+					}
+					NOT = { tag = KRL }
+					NOT = { tag = PRU }
+					  OR = {
+					   in_sphere = THIS
+					   vassal_of = THIS
+					}
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		change_tag = CAE
+		add_accepted_culture = north_german
+		add_accepted_culture = pomeranian
+		381 = { remove_core = CAE }
+		}
+	}
+
+	integrate_prussia = {
+		potential = {
+			OR = {
+				tag = HLR
+				tag = CAE
+				tag = NGF
+			}
+			690 = { owned_by = THIS }
+			698 = { owned_by = THIS }
+			NOT = { has_country_flag = integrate_prussia }
+		}
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				tag = CAE
+			}
+		}
+		effect = {
+			PRU_690 = { add_core = THIS }
+			PRU_695 = { add_core = THIS }
+			set_country_flag = integrate_prussia
+		}
+	}
+
+	integrate_rhineland = {
+		picture = MarzBerlin
+		potential = {
+			OR = {
+				tag = SGF
+				tag = NGF
+			}
+			NOT = { has_country_flag = rheinish_acc }
+		}
+		allow = {
+			OR = {
+				owns = 570
+				owns = 574
+				owns = 575
+				owns = 578
+			}
+		}
+		effect = {
+			set_country_flag = rheinish_acc
+			add_accepted_culture = rheinish
+			HES_566 = { add_core = THIS } 	#Hessen
+			PRU_575 = { add_core = THIS }	#Nordrhein
+			PRU_572 = { add_core = THIS }	#Rhineland
+			BRG_573 = { add_core = THIS }	#Saarbucken
+			HES_2560 = { add_core = THIS }	#Mainz
+			FRM_564 = { add_core = THIS }	#Palatinate
+			580 = { add_core = THIS }
+			581 = { add_core = THIS }
+	   }
+    }
+
+	integrate_rhenish_CAE = {
+		potential = {
+			tag = CAE
+			NOT = { has_country_flag = rheinish_acc }
+		}
+		allow = {
+			OR = {
+				owns = 570
+				owns = 574
+				owns = 575
+				owns = 578
+			}
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			set_country_flag = rheinish_acc
+			add_accepted_culture = rheinish
+			HES_566 = { add_core = CAE } 	#Hessen
+			PRU_575 = { add_core = CAE }	#Nordrhein
+			PRU_572 = { add_core = CAE }	#Rhineland
+			BRG_573 = { add_core = CAE }	#Saarbucken
+			HES_2560 = { add_core = CAE }	#Mainz
+			FRM_564 = { add_core = CAE }	#Palatinate
+		}
+  }
+
+	integrate_elbe = {
+		picture = MarzBerlin
+		potential = {
+			OR = {
+				tag = SGF
+				tag = RHI
+			}
+			NOT = { has_country_flag = elbe_acc }
+		}
+		allow = {
+			OR = {
+				owns = 554
+				owns = 536
+				owns = 585
+				owns = 534
+				owns = 540
+				owns = 539
+				owns = 532
+				owns = 553
+				owns = 549
+			}
+		}
+		effect = {
+			set_country_flag = elbe_acc
+			add_accepted_culture = north_german
+			add_accepted_culture = pomeranian
+			PRU_546 = { add_core = CAE }	#Hinterpommern
+			SCA_544 = { add_core = CAE }	#Mecklenburg
+			HOL_369 = { add_core = CAE }	#Holstein
+			HAN_532 = { add_core = CAE }	#Luneburg
+			HAM_528 = { add_core = CAE }	#Hanover
+			SAX_1 = { add_core = CAE }		#Thuringia
+			PRU_581 = { add_core = CAE }  #Westfalen
+			PRU_553 = { add_core = CAE }	#Anhalt
+			SAX_558 = { add_core = CAE }	#Saxony
+			PRU_549 = { add_core = CAE }	#Brandenburg
+		}
+	}
+
+	integrate_south = {
+		picture = MarzBerlin
+		potential = {
+			OR = {
+				tag = NGF
+				tag = RHI
+			}
+			NOT = { has_country_flag = south_acc }
+		}
+
+		allow = {
+			any_owned_province = { is_core = SGF }
+		}
+
+		effect = {
+			set_country_flag = south_acc
+			add_accepted_culture = south_german
+			add_accepted_culture = swiss
+			SGF = { all_core = { add_core = THIS } }
+			FRM_564 = { add_core = CAE }	#Palatinate
+		}
+	}
+
+	integrate_swamp_germans = {
+		potential = {
+			tag = GER
+			NOT = { primary_culture = czech }
+			NOT = { has_country_flag = swamp_germans }
+			NOT = { has_country_flag = bohemia_integration }
+		}
+		allow = {
+			any_owned_province = { is_core = NET }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			add_accepted_culture = dutch
+			NET = { all_core = { add_core = THIS } }
+			set_country_flag = swamp_germans
+		}
+	}
+
+	integrate_bohemians = {
+		potential = {
+			tag = GER
+			NOT = { primary_culture = czech }
+			NOT = { has_country_flag = swamp_germans }
+			NOT = { has_country_flag = bohemia_integration }
+		}
+		allow = {
+			any_owned_province = { is_core = BOH }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			add_accepted_culture = czech
+			BOH = { all_core = { add_core = THIS } }
+			set_country_flag = bohemia_integration
+		}
+	}
+
+	centralize_hre = {
+		picture = Reich_kaiser
+		potential = {
+			tag = BOH
+			is_greater_power = yes
+			HLR = { exists = no }
+			NOT = { year = 1848 }
+		}
+		allow = {
+			NOT = { year = 1848 }
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+						province_id = 529
+						province_id = 528
+						province_id = 530
+						province_id = 369
+						province_id = 533
+						province_id = 577
+						province_id = 575
+						province_id = 576
+						province_id = 572
+						province_id = 574
+						province_id = 573
+						province_id = 570
+						province_id = 571
+						province_id = 624
+						province_id = 623
+					}
+				}
+			}
+		}
+		effect = {
+    	change_tag = HLR
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+				  OR = {
+				    in_sphere = THIS
+						vassal_of = THIS
+					}
+					NOT = { tag = PRU }
+					NOT = { tag = KRL }
+			  }
+				country_event = 333458
+			}
+			set_global_flag = hre_formed
+			prestige = 50
+		}
+	}
+
+	move_to_frankfurt = {
+
+		potential = {
+			tag = HLR
+			NOT = { has_country_flag = frankfurt_unify }
+		}
+
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			owns = 564
+		}
+
+		effect = {
+			GER = {
+				all_core = {
+					add_core = HLR
+				}
+			}
+			set_country_flag = frankfurt_unify
+			add_accepted_culture = rheinish
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = pomeranian
+			add_accepted_culture = swiss
+			capital = 564
+			prestige = 50
+			564 = {
+				life_rating = 5
+			}
+		}
+	}
+}

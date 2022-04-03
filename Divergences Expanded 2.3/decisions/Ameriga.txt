@@ -1,0 +1,723 @@
+political_decisions = {
+
+	#Amazonie
+	Manifest_destiny_AMADEM = {
+		picture = Manifest_Destiny_ARC
+		potential = {
+			tag = AMA
+			NOT = { has_country_flag = AMALOT }
+		}
+		allow = {
+    	owns = 2447
+			OR = {
+				is_greater_power = yes
+				state_n_government = 1
+			}
+		}
+		effect = {
+			badboy = 15
+			set_global_flag = Amerigue
+			LOT = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = AMALOT
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.4 }
+  	}
+	}
+
+	return_to_france_ama = {
+		picture = apanage
+		potential = {
+			tag = AMA
+		}
+		allow = {
+			owns = 425
+			owns = 418
+			owns = 428
+			owns = 443
+		}
+		effect = {
+			prestige = 25
+			primary_culture = french
+			add_accepted_culture = amazonian
+			add_accepted_culture = breton
+			set_country_flag = amazonian_france
+			change_tag = FRA
+		}
+	}
+
+	Ameriga_AMA = {
+		picture = of_state_n_government
+		potential = {
+			tag = AMA
+    	NOT = { exists = AZL }
+			has_country_flag = AMALOT
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+      LOT = {
+		    OR = {
+		     	exists = no
+			 		vassal_of = THIS
+			 		in_sphere = THIS
+				}
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+			     		OR = {
+								in_sphere = THIS
+					 			vassal_of = THIS
+							}
+						}
+					}
+		   	}
+			}
+		 	AMA = {
+		   	all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+					  	OR = {
+							 	in_sphere = THIS
+							 	vassal_of = THIS
+							}
+						}
+					}
+				}
+		   }
+		 }
+		effect = {
+			prestige = 20
+			change_tag = AZL
+			capital = 2447
+			LOT = { all_core = { add_core = AZL } }
+			add_accepted_culture = lotharian
+			any_country = {
+				limit = {
+      		tag = LOT
+				  OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 333458
+			}
+			SA_2 = { add_core = THIS } #Proche Amazonie
+			SA_3 = { add_core = THIS } #Amazonie Inferior
+			SA_2318 = { add_core = THIS } #Gran Chaco
+		}
+	}
+
+	#Lotharingia
+	Manifest_destiny_LOT = {
+		picture = Manifest_Destiny_ARC
+		potential = {
+			tag = LOT
+			NOT = { has_country_flag = LOT_AMG }
+		}
+		allow = {
+    	owns = 2447
+			OR = {
+				is_greater_power = yes
+				state_n_government = 1
+			}
+		}
+		effect = {
+			badboy = 15
+			AMA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = LOT_AMG
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.4 }
+  	}
+	}
+
+	become_true_lotharingia = {
+		potential = {
+			tag = LOT
+		}
+		allow = {
+			owns = 470
+			owns = 451
+			owns = 465
+			owns = 720
+			owns = 724
+		}
+		effect = {
+			add_accepted_culture = provencal
+			add_accepted_culture = north_italian
+			add_accepted_culture = burgundian
+			change_tag = ARP
+		}
+	}
+
+	Ameriga_LOT = {
+		picture = of_state_n_government
+		potential = {
+			tag = LOT
+			has_country_flag = LOT_AMG
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+      AMA = {
+		  	OR = {
+		    	exists = no
+			 		vassal_of = THIS
+			 		in_sphere = THIS
+				}
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+							  vassal_of = THIS
+						 	}
+						}
+					}
+		 		}
+		 }
+		 LOT = {
+		   all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+					   		in_sphere = THIS
+							  vassal_of = THIS
+						  }
+						}
+					}
+		   }
+		  }
+		}
+		effect = {
+			prestige = 20
+			change_tag = AZL
+			capital = 2447
+			AMA = { all_core = { add_core = AZL } }
+			add_accepted_culture = amazonian
+			LOT = { all_core = { remove_core = LOT	} }
+			any_country = {
+				limit = {
+       		tag = AMA
+				  OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 333458
+			}
+			SA_2 = { add_core = THIS } #Proche Amazonie
+			SA_3 = { add_core = THIS } #Amazonie Inferior
+			SA_2318 = { add_core = THIS } #Gran Chaco
+		}
+	}
+
+	#Ameriga Generic
+	Northern_border = {
+		picture = Guyana
+		potential = {
+			tag = AZL
+			NOT = { has_country_flag = guyana_claim }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			badboy = 5
+			set_country_flag = guyana_claim
+			add_accepted_culture = guianan
+			ENG_1979 = { add_core = THIS } #Guiana
+			VNZ_2275 = { add_core = THIS } #Angostura
+			BRZ_2408 = { add_core = THIS } #Para
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.8 }
+  	}
+	}
+
+	Federation_NAN = {
+		potential = {
+			tag = AZL
+			nationalism_n_imperialism = 1
+			NOT = { has_country_flag = Odon_treaty }
+		}
+		allow = {
+			NAN = {
+				all_core = {
+					OR = {
+						province_id = 2131
+						province_id = 2133
+						empty = yes
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+	 		add_accepted_culture = beornian
+      NAN = { all_core = { add_core = AZL } }
+      any_country = {
+				limit = {
+        	tag = NAN
+				  OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 333458
+			}
+			set_country_flag = Odon_treaty
+		}
+	}
+
+	#Ameriga Amazonie
+	Granada_border = {
+		potential = {
+			tag = AZL
+			has_country_flag = guyana_claim
+			NOT = { has_country_flag = granada_claim }
+			primary_culture = amazonian
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			AZL = {
+				all_core = {
+					OR = {
+						owned_by = AZL
+						empty = yes
+					}
+				}
+			}
+		}
+		effect = {
+			badboy = 15
+			set_country_flag = granada_claim
+			GRA = { all_core = { add_core = AZL } }
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.4 }
+  	}
+	}
+
+	GRA_congress = {
+		picture = Congress_AMA
+		potential = {
+			tag = AZL
+			nationalism_n_imperialism = 1
+			has_country_flag = granada_claim
+			NOT = { accepted_culture = granadan }
+		}
+		allow = {
+			NOT = { GRA = { exists = yes } }
+			GRA = {
+				all_core = {
+					OR = {
+						empty = yes
+						owned_by = AZL
+					}
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = granadan
+			set_country_flag = ameriga_united
+		}
+	}
+
+	#Ameriga Lotharingia
+	integrate_guranani_lot = {
+		potential = {
+			OR = {
+				tag = LOT
+				AND = {
+					tag = AZL
+					has_country_flag = LOT_AMG
+				}
+			}
+			NOT = { accepted_culture = guarani }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			owns = 2339
+			owns = 2416
+			owns = 2338
+		}
+		effect = {
+			add_accepted_culture = guarani
+			AVA = { all_core = { add_core = THIS } }
+		}
+	}
+
+	integrate_amazonian_natives_lot = {
+		potential = {
+			OR = {
+				tag = LOT
+				AND = {
+					tag = AZL
+					has_country_flag = LOT_AMG
+				}
+			}
+			NOT = { accepted_culture = amazonian_native }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			owns = 2417
+			owns = 2403
+			owns = 2600
+		}
+		effect = {
+			add_accepted_culture = amazonian_native
+			TAP = { all_core = { add_core = THIS } }
+		}
+	}
+
+	invade_inca_LOT = {
+		potential = {
+			tag = AZL
+			primary_culture = lotharian
+			NOT = { has_country_flag = incan_invasion }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			owns = 2377
+			owns = 2379
+			owns = 2383
+		}
+		effect = {
+			badboy = 15
+			ARG_2368 = { add_core = THIS } #Tilcara
+			ARG_2387 = { add_core = THIS } #Catamarca
+			BOL_2305 = { add_core = THIS } #Cuntinsuyu
+			INC_2308 = { add_core = THIS } #Atacama
+			CHL_2322 = { add_core = THIS } #Antisuyu
+			INC_2389 = { add_core = THIS } #Kuchichay
+			INC_2324 = { add_core = THIS } #Mapucho
+			set_country_flag = incan_invasion
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.4 }
+  	}
+	}
+
+	aimaran_congress = {
+		potential = {
+			tag = AZL
+			has_country_flag = incan_invasion
+			NOT = { has_country_flag = aimarans_accepted }
+		}
+		allow = {
+			INC = { exists = no }
+			owns = 2314
+			owns = 2324
+			owns = 2389
+			owns = 2368
+		}
+		effect = {
+			set_country_flag = aimarans_accepted
+			add_accepted_culture = aimara
+		}
+	}
+
+	embrace_ameriganism = {
+    picture = "Panarcadianism"
+		potential = {
+			tag = AZL
+			OR = {
+				has_country_flag = aimarans_accepted
+				has_country_flag = ameriga_united
+			}
+      NOT = { has_country_flag = amerigan_ideal }
+		}
+		allow = {
+			is_greater_power = yes
+			war = no
+		}
+		effect = {
+			prestige = 30
+			set_country_flag = amerigan_ideal
+      nationalvalue = nv_liberty
+			any_pop = {
+				limit = {
+					is_accepted_culture = yes
+				}
+				militancy = -2
+      	consciousness = 2
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+				}
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 1
+				}
+				scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+				}
+				scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+				}
+				scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 1
+				}
+			}
+      add_country_modifier = {
+		  	name = the_homestead_act2
+			  duration = -1
+		  }
+		}
+  }
+
+	#Slave Acceptance
+	afro_french_slave_citizens = {
+	picture = acceptation_afro
+		potential = {
+			OR = {
+				tag = PLA
+				tag = NBG
+				tag = ARC
+				tag = AMA
+				tag = LOT
+				tag = AZL
+				accepted_culture = amazonian
+				accepted_culture = plantagenian
+				accepted_culture = lotharian
+				accepted_culture = septiman
+			}
+			NOT = { accepted_culture = afro_frankish }
+		}
+		allow = {
+			NOT = { war = yes }
+			slavery = no_slavery
+			OR = {
+			   citizenship_policy = full_citizenship
+			   citizenship_policy = limited_citizenship
+			}
+			citizens_rights = all_voting_pops
+			invention = national_fraternity
+		}
+		effect = {
+			add_accepted_culture = afro_frankish
+			any_pop = {
+				limit = {
+			  	NOT = { culture = afro_frankish }
+			  }
+				militancy = 2
+			}
+			any_pop = {
+				limit = {
+			  	culture = afro_frankish
+				}
+        consciousness = 2
+			}
+		}
+	}
+
+	afro_colombian_slave_citizens = {
+	picture = acceptation_afro
+		potential = {
+			OR = {
+				tag = CLM
+				tag = CUB
+				tag = LST
+				tag = MEX
+				tag = JLS
+				tag = AZT
+				tag = YUC
+				tag = UCA
+				tag = ELS
+				tag = NIC
+				tag = PNM
+				tag = GRA
+				tag = PUR
+				tag = ZAP
+				tag = SAN
+				tag = GUY
+				tag = QUI
+				tag = ATS
+				accepted_culture = lusitanian
+				accepted_culture = granadan
+				accepted_culture = athesian
+				accepted_culture = caribeno
+				accepted_culture = guianan
+			}
+			NOT = { tag = HIS }
+			NOT = { tag = VEN }
+			NOT = { tag = ITA }
+			NOT = { accepted_culture = afro_latino }
+		}
+		allow = {
+			NOT = { war = yes }
+			slavery = no_slavery
+			OR = {
+				citizenship_policy = full_citizenship
+				citizenship_policy = limited_citizenship
+			}
+			citizens_rights = all_voting_pops
+			invention = national_fraternity
+		}
+		effect = {
+			add_accepted_culture = afro_latino
+			any_pop = {
+				limit = {
+		    	NOT = { culture = afro_latino }
+			  }
+			  militancy = 2
+			}
+			any_pop = {
+	    	limit = {
+	     		culture = afro_latino
+				}
+        consciousness = 2
+			}
+		}
+	}
+
+	afro_germanic_slave_citizens = {
+	picture = acceptation_afro
+		potential = {
+			OR = {
+				accepted_culture = vinlander
+				accepted_culture = ayitian
+				accepted_culture = livlandian
+			}
+			NOT = { accepted_culture = afro_germanic }
+		}
+		allow = {
+			NOT = { war = yes }
+			slavery = no_slavery
+			OR = {
+				citizenship_policy = full_citizenship
+				citizenship_policy = limited_citizenship
+			}
+			citizens_rights = all_voting_pops
+			invention = national_fraternity
+		}
+		effect = {
+			add_accepted_culture = afro_germanic
+			any_pop = {
+				limit = {
+		    	NOT = { culture = afro_germanic }
+			  }
+			  militancy = 2
+			}
+			any_pop = {
+	    	limit = {
+	     		culture = afro_germanic
+				}
+        consciousness = 2
+			}
+		}
+	}
+
+	liberty_enlightening_the_world_AZL = {
+		potential = {
+			NOT = {
+				has_global_flag = statue_of_liberty_has_been_built
+			}
+			tag = AZL
+			government = democracy
+			owns = 2447
+			year = 1850
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_global_flag = statue_of_liberty_has_been_built
+			prestige = 5
+			2447 = {
+				add_province_modifier = {
+					name = the_statue_of_liberty
+					duration = -1
+				}
+			}
+			any_pop = {
+				militancy = -0.5
+			}
+		}
+	}
+
+	assimilate_incas = {
+		potential = {
+			INC = {
+				exists = no
+				any_core = { owned_by = THIS }
+			}
+			OR = {
+				is_culture_group = anglois_american
+				is_culture_group = burgundian_american
+				is_culture_group = english_american
+				is_culture_group = latin_american
+			}
+			OR = {
+				has_country_flag = clm_ameriga_focus
+				NOT = { tag = CLM }
+			}
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					OR = {
+						culture = quechua
+						culture = aimara
+					}
+				}
+				remove_core = INC
+				add_province_modifier = {
+					name = assimilation_boost_massive
+					duration = -1
+				}
+			}
+			set_country_flag = incan_assimilation
+		}
+	}
+}

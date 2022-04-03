@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "GC_NAME"
+	desc = "GC_DESC"
+	date = 1836.1.1
+	cameraX = 2950
+	cameraY = 1550
+}
+
+bookmark =
+{
+	name = "Divergence into Pieces"
+	desc = "Every tag in Divergence of Darkness is released so feel free to explore every nation. Note decisions and events may be awkward due to this"
+	date = 1836.1.2
+	cameraX = 1270
+	cameraY = 1450
+}

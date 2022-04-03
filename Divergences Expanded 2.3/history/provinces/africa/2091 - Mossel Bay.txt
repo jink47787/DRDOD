@@ -1,0 +1,13 @@
+owner = BRG
+controller = BRG
+add_core = SAF
+add_core = LWE
+add_core = BTV
+trade_goods = fruit
+life_rating = 35
+colonial = 2
+1836.1.2 = {
+  owner = LWE
+  controller = LWE
+  colonial = 0
+}

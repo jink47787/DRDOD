@@ -1,0 +1,10 @@
+owner = TUN
+controller = TUN
+add_core = TUN
+add_core = MGH
+trade_goods = wool
+life_rating = 30
+terrain = semidesert
+1836.1.2 = {
+  remove_core = MGH
+}

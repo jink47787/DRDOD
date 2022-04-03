@@ -1,0 +1,311 @@
+#Current Changes (Post-Fork):
+#
+# 1.01
+#
+#Removed Guarenteed 4/4 generals
+#Rebalance general traits by removing a bunch of them
+#Japan no longer gets korean accepted with pacific route
+#Fix to late-game demand concession and extablish Protectorate CB's
+#Removed Arcadia Development decisions
+#Gas Attack now back to Vanilla
+#
+# 1.02
+#
+#The following nations have had their unique decisions removed:
+#Syria, Kurdistan, African Uncivs (NOT Ethiopia or Egypt), Kurland/New Kurland, Provence, Finland, Assyria, Nepal, Rajputana, Central Asia, Lithuania, Livonia, Rohnnst
+#Zhorauo/New Zealand Life ratings Buffed
+#Kita Kaigan now starts fully stated
+#Austral Destiny now gives Tiongha accepted instead of aborigine
+#Greater Austral Destiny no longer gives Yue, Filipino accepted
+#Greater Austral Destiny no longer gives cores on Taiwan, Okinawa and Northern Philippines
+#Decision for Qinqiu, Zhourao and Lanfang to get cores and accepted on each other removed
+#Arabian decision to get cores on Ethiopia removed
+#Aragon now starts with Basque Accepted
+#Mob size bonus for Balkan and German countries reduced from 5% to 2%, is completely removed in 1855
+#Burgundy decision to form France no longer removes Dutch accepted
+#France formed by Burgundy can no longer get Provencal or Anglois accepted
+#Confed of Rhine decision no longer removes Burgundian accepted, no longer adds Danubian accepted
+#Decision that previously gave Confed of Rhine Burgundian accepted now gives Danubian accepted
+#DM education decisions removed
+#DM French path no longer gives Burgundian accepted
+#DM English path no longer gives Beornian accepted
+#DM French and English Paths can no longer get each other accepted in 1900
+#HRE removed completely
+#Danubian Confed no longer gets the decision/event to get either Rheinish, Bohemian or South Slavic cores and accepted pops
+#Hungary Balkan route no longer gives Bulgarian Accepted
+#Italian Latin Empire (NOT Aragon-Italy) no longer gives Provencal accepted
+#Japanese Co-Prosperity Sphere decision no longer gives Javan Accepted
+#Japan Invade Zhourao no longer gives accepted cultures
+#Monument destruction decisions removed
+#Netherlands can now do Boer-septiman-netherlands Union without the requirement of being Belgium Confed or Batavia beforehand
+#Jagiellonian decision path for all countries removed
+#Russian Southern Path no longer gets Kazakh accepted
+#Scandinavian Paths no longer remove accepted cultures
+#Scandi British Path can no Longer get Anglois accepted
+#Deleted bunch of Transcaucasia decisions
+#Zapaoslavia no longer removes accepted cultures
+#Zapaoslavia can no longer get Elbian or Ruthenian Accepted
+#Overseas China unite cb infamy reduced from 6 to 3
+#Forming France as Burgundy no longer removes cores on Netherlands
+#Forming Confed of Rhine no longer removes cores on Burgundy
+#Japanese Co-Prosperity sphere decision no longer gives cores on Malacca, Sumatra and Zhourao
+#
+# 1.03.x
+#
+#Champagne state switched from Dual Monarchy to Burgundy Control
+#Changes to liferatings (LR) across the world as follows: (Before > After) (Please note these are the file names for the provinces)
+#All colonized land at start buffed to 35 LR with exceptions listed below
+#Kita Kaigan: unchanged apart from Capital 20>25 LR
+#Qingqiu: Capital now 40 LR
+#Plantagenia: Capital now 45 LR, Saint-Martin, Fort Verwood, Port-Royal now 40 LR
+#Vinland: Tobol, Lonasmoen, Nevsollberg, Bysternia, Sparrebark, Fredrikstad, Norrby, Erikshaven and Newfoundland now 40 LR
+#Belgium Confed: Philippa, Esperanse, Port Valois, Novelle Brugge, Bourg-George, Cap Valois and Brusexlles-Atlantique now 40 LR
+#Gran Colombia: Sao Salvador, Nova Lisbon, Mexico City, San Salvador, Cartagena des Indias, Bogota, Quito, Lima, Cusco and Caracas now 40 LR
+#Caribbean: Havana, Jamaica, Provestenen, Puerto Rico, Porto Dandolo now 40 LR
+#Amazonie: Port Liberte, Saint-Floret, Le Faou, Port Sucre, Cote du Cafe State now 40 LR
+#Lotharingia: Nouvelle Alsace State, Domcey-sur-Oden, Fort Lothere now 40 LR
+#Beornia: Camelot, New London now 40 LR
+#Inca: Tiwananku, Cochabamba, Chuquisaca, Mapucho, Uraycusta now 40 LR
+#Spain: Lisbon, Oporto, La Courna, Seville now 40 LR, Cadiz Port 1>2
+#Aragon: Saragosa, Valencia, Barcelona, Sicily Island now 40 LR, Port moved from Malta to Palermo
+#Italy: Parma, Modena, Bologna, Bergamo, Brescia, Verona now 40 LR
+#Dual Monarchy: Ireland, Isle of Mann, Channel Islands now 30 LR with exceptions of Belfast (35 LR) and Dublin (40 LR), Newcastle, Sheffield, York, Leeds, Birmingham, Cardiff, Bristol, Caen, Bordeaux, Orleans, Montpelier, Lyon now 40 LR, London and Paris now 50 LR
+#Provence: Marseilles and Tolon now 40 LR
+#Burgundy: Alsace State, Dijon, Geneva, Brussels, Brugge, Ghent, Antwerp, Rotterdam, Amsterdam, Utrecht, Spa and Luxembourg now 40 LR
+#Austria, Bohemia, Switzerland, Germany are now 40 LR all over except Hanover, Vienna and Prague which are 45 LR
+#Scandinavia: Glasgow, Edinburgh, Copenhagen, Malmo, Helsinki and Turku now 40 LR
+#Hungary and Balkans: Budapest, Bratislava, Zagreb, Dubrovnik, Belgrade, Sofia, Burgas, Varna, Bucharest, Salonika, Skopje and Iasi now 40 LF
+#Turkey/Middle East: Uskudar, Izmit, Bursa, Ismir, Ankara, Trabzon, Aleppo, Damascus, Antioch, Jerusalem, Medina, Mecca, Jeddah, Baghdad, Abu Dhabi (whole country), Muscat, Saa'na, Aden, Tabriz, Baku, Tbilisi now 40 LR, Istanbul 50 LR, naval base 1>2, Fort 1>2
+#Persia/Afghanistan/Central Asia: Tehran, Qom, Shiraz, Bandar Abbas, Jask, Kabul, Bukhara, Samarkland and Kokand now 40 LR
+#India: Unchanged at 32 LR apart from Lahore, Armistar, Agra, Dhaka, Amhenbad, Hydrabad, Katmandu, Madras, Ceylon Island at 35 LR, Maldives at 30 LR and Delhi, Calicut, Bombay, Goa, Pondicherry Rajbalhat and Karachi at 40 LR
+#Indochina: Hue, Ankgor, Ava now 40 LR
+#Indonesia: Malay Peninsular, Banda Aceh, Medan, Brunei Province, Makassar, Batavia, Bali now 40 LR
+#China: Nerfed to 31 LR except Taiwan, Fuzhou, Tianjin, Kumming, Xian, Guanwai State at 35 LR and Beijing, Hangzhou, Nanjing, Taiping, Chengdu, Treaty Ports, Canton, Haishenwai at 40 LR
+#Korea: Pyongyang, Seoul, Inchon and Pusan now 40 LR
+#Japan: Kyoto, Osaka, Kobe, Hiroshima, Nagasaki, Hakodate now 40 LR
+#Australia/NZ: Noongar, Penghu, Weizhou, Whangerai, Tauranga, Manawatu, Timaru now 40 LR
+#Maghreb owned lands 31>30
+#Zanzibar naval base 1>2
+#Carthage Naval Base 1>2
+#Inland Libya 32>30
+#Siwa 10>30
+#Timbuktu, Gao, Fayyum, Khartoum, Debre Markos, Mogadishu, Kinshasa, Mombassa, Kigali, Usumbura, Dar Es Salaam, Kilwa, Marrakesh, Alger, Carthage, Tripoli, Cape Town 35>40
+#Land Between Lake Chad and Funj 10>30
+#Gold Coast and Lagos buffed to 40 LR
+#Sao Tome, Fernando Po, Seychelles, Ascension, Tristan da Cunha changed to 30 LR
+#Fixed so PLC-Zapadoslavia can't constantly interchange between the two and accidentally get Ruthenian Accepted
+#Saxony no longer required for Zapadoslavia
+#Ottoman decision for cores on Albania fixed, Now get Albanian instead of Serb accepted with 1st Tanzimat reform, now get serb accepted with second Taznimat reform
+#Slight trait change for generals
+#Increased assimilation across world, cores no longer block assimilation
+#Deleted Maghreb Rebellion Event Chain
+#Fixed Admirals issue
+#Buffed Laissez-Faire
+#Changes to political reforms
+#Assimilation buffed
+#
+# 1.04
+#
+#Fixed mistyped reforms
+#Ireland LR 30>32
+#DM English path now instantly gives Welsh accepted
+#DM French path now instantly gives Breton accepted
+#Move Breton acceptance to nationalism and imperialism
+#Burgundy French path no longer changes tag to France
+#Mob size bonus for Balkan and German nations 2>3%, duration extended to 1860
+#Moved Serb back to first Tanzimat reform
+#
+# 1.05
+#
+#Bosnia now starts with serbian and croat accepted
+#Cleaning up Elbian decision
+#Elbian Rheinish moved to revolution and counter-revolution
+#Pop Cultures in Germany, Burgundy, DM, Karelia and Iberia adjusted
+#Fixes to Arpitania and Dutch decisions
+#Aragonese Cores on Africa removed apart from Cathage state
+#Swapped colors around between Iberia and Hispania
+#Adopted Pop_type file from Igor_PUIR v6
+#Afghaistan now starts with Panjabi accepted
+#Aragon, Navarra, Portugal and Catalonia no longer starts with Castilian accepted
+#Transcaucasia nation now starts with Dagestani accepted
+#Baden Primary and accepted Culture swapped around
+#Brandenburg now starts with Baltic German accepted
+#Dzungar now starts with Tajik and Tatar accepted
+#Crete, Cyprus now start with Turkish accepted
+#Illyria now starts with Slovene accepted from start
+#Egypt now starts with Coptic accepted
+#East Frisia no longer starts with Rheinish accepted
+#Frankfurt, Munster now start with Elbian accepted
+#Geneva now starts with Swiss accepted
+#Hesse-Kassel now Elbian Primary, Rheinish and Danubian accepted
+#Jamaica and Curaco now is Afro-Frankish primary, Burgundian Accepted
+#Japan now starts with Kaiganese accepted
+#Kashmir now starts with Kalash accepted
+#Kurdistan now has assyrian accepted instead of turkish
+#Lusitania now starts with Portugese accepted
+#Oldenburg now starts with Dutch accepted
+#Pomerania no longer starts with Elbian accepted
+#Ruthenia no longer starts with Polish accepted
+#Saxony now starts with Czech accepted instead of Danubian
+#Slovenia now starts with Venetian accepted instead of Czech
+#Nassau now starts with Elbian accepted instead of Danubian
+#Removed russian pops in Georgia
+#Split Oldenburg state between Frisia and Westfalen states
+#Increased life ratings in Dubrovnik, Constanta, Sarajevo, Mosul, Basra, Brest, Nantes, Torun, Liege, Trondheim, Bergen, Uppsala, Vasteras, Gothenburg, Odense, Bytantaysk, Erivan, Bilbao, Chelmsford, Oxford, St Albans to 40LR
+#Lowered life rating in Belfast to 35LR
+#Swapped Isle of man, Deutsch Krone to be owned by Scandi, Chios and Dodecanese to be owned by Venice
+#Made Provencal culture accepted for DM to only require one core to be owned instead of all
+#Added decision for Aragon to get cores on adjacent spanish states and a free inherit on navarra
+#Added core on Torun for Prussia
+#revolution and counterrevoultion now gives 2 national focuses instead of 1
+#Breton accepted removed from English path
+#Buffed DM start by giving one year draft
+#Crimea now starts with techs
+#Swiss primary cultured nations now get the early mob size buff
+#All balkan minor nations (not moldavia, Venice, Hungary and Ottomans) now start with service by requirement, Ottomans and Moldavia now start with 4 year draft
+#Fixed Panama canal bug
+#
+# 1.06
+#
+#Culture smudging in Burgundy, Ferrara
+#DM French path now instantly gives provencal accepted, gives cores on Savoie, all french cores and all occitan cores
+#Irish accepted for DM now only requires one irish core to be owned
+#Claiming Beornia as DM now removed
+#Cleaned up Burgundian Rheinish formable decisions
+#Burgundian Arpitania no longer gets north Italian accepted
+#Added starting cores for Iberia and cleaned up Iberian decision
+#Burgundy French path now changes tag to France, can now get provencal accepted
+#Re-added lesser Jagiellonian union decision
+#Gave Kurdish and Baluchi accepted for persia formable, gave mashriqi accepted for Ayranam accepted
+#Re-added Hungarian accepted for Ottoman balkan path
+#Ottomans now start with Kurdish accepted, old kurdish decision now gives cores on kurdistan
+#Added Uighur accepted for Turania path
+#Made north caucasian accepted for ottomans turania path be instant
+#Made Albanian accepted for Ottoman balkan path be instant, made bulgraian accepted happen with state and gov instead of nat and imperial
+#Zapadoslavia now made to require to own set provinces instead of entire cores of a country
+#Modified the PDF guide
+#HRE now can be formed with mass politics
+#Dual Monarchy can now abandon either France or England and become France or GB and get accepted and cores on their respective regions
+#Added a settings file
+#
+# 1.06.1
+#
+#Made Elbians or HRE not form Zapaoslavia
+#
+# 1.06.2.x
+#
+#Removed pop growth modifiers from education, pension and work hour reforms
+#Scandi British path no longer gets welsh accepted
+#Removed bugged port from Beja and moved it to Santander
+#Last two arty techs support nerfed 100%>50%
+#Salzburg annexed into Tirol
+#Added Ugrian accepted to Ottoman Turania path, fixed decision
+#DM abandonment decisions no longer requires you to have chosen a certain path
+#
+# 1.07
+#
+#Fixed bugged decision for Plantagenia Arcadia and Turkish Arabian paths
+#Trent no longer required to form League of Munich
+#Crimean accepted added to Russian southern path
+#Bozen, Ljubljana, Rangoon, Pegu, Taipei, Jianxing, Ile de France state, New London, New Jerusalem, Cambridge buffed to 40LR
+#Jilin now 35LR
+#Ireland (Not Dublin and Belfast), 31LR China and Sub-Saharan Africa (except key settlements, South Africa and Horn of Africa) nerfed to 30LR
+#Iberian map colour changed again
+#Added non-accepted bureaucrat and RGO change decision from Igor_PUIR
+#Korean Reactionaries now state capitalist
+#Swizterland can now be puppeted for the swiss arpitania decision
+#Afro-germanic can now be accepted via decision
+#Cleaned up all decision files pretty much
+#Burgundian French path no longer gets Breton accepted
+#Nerfed post-china formation decisions
+#To get Caribbean accepted no longer has upper house requirements
+#Fixed Imperial Liberation cb's
+#Made chinese reunification cb's be more restricted to who can do it free of charge
+#Removed create x decisions
+#Qingqiu, Beornia pops buffed
+#Sioux and Pueblo cultures merged into native american minor
+#Merged 2 Qingqiu states in modern-day british colombia together
+#Chinese treaty ports and Canton now one province states, other coastal states adjusted regarding this
+#Modern day Ecuador states merged, Galapagos islands now its own state
+#Panama and Suez canal now their own state
+#Added AI coding to prevent the AI going over 25 infamy by taking a decision
+#Central Arabia merged into one state
+#States adjusted in Papua New Guinea, Solomon islands and Vanuatu
+#Expanded Armenian cores
+#Added turkish cores to crete
+#Ural republic added as a releasable country
+#Updated pop_type file to Igor_PUIR v7
+#Adjusted states in Transylvania
+#Fixed General traits to restore the balance I wanted
+#Japan China route nerfed and pushed back
+#Readded HRE in it's vanilla form, made 1900 HRE formation be germany instead
+#
+# 1.08
+#
+#Gas Attack/defence rng removed, gas defense can only be discovered after 1905
+#Unit base attack increased slightly across the board
+#Reverted industry techs and inventions back to vanilla
+#Vinland now starts with all pop voting
+#Cetua now a core of Spain
+#Egypt given Research reform to start with
+#German decisions rework
+#Migration/Assimilation Mechanics updated to Igor v8
+#
+# 1.08.1
+#
+#German Decisions tidied up
+#All tech and inventions now same as Alstalt except techs I have changed before
+#Inventions for Clipper Factories, Ironclads, Cruisers, Monitors, Battleships, Armor, Airplanes, Hussars, All Cavalry, All Early game mil factories changed to 100%
+#Political/Social Reforms changed to be in line with my version of Alstalt wherever possible, removed import cost from a lot of things
+#Buildings, unit costs, production requirements files plus more all reverted to Alstalt
+#Removed supply consumption bonuses from anti-military/pacifism
+#The reduced early game infamy now will last till at least 1846
+#End date moved to 2000
+#Soldier to pop damage increased from 0.2 to 0.25
+#
+# 2.0
+#
+#Rework of Scandinavia decisions and events and added two new form-able tags: North Sea Empire and Baltic Empire
+#Rework of Russian Expansion decisions and added Baltic Empire form-able for Novgorod
+#Extension of Return home path for Vinland to include North Sea Empire form-able
+#Belgium Confederacy return home path reworked to form Belgium instead of Netherlands
+#State rework in Arcadia and Siberia
+#Burgundian Confederation of Rhine decision re-coded to be readable
+#Oob rework for Qingqiu and Plantagenia
+#Vinland buffed with now same starting tech as Belgium, more starting solider pops but starting literacy lowered
+#Qingqiu and Zhourao now start with same tech as Gran Colombia
+#State rework in Slovakia
+#Lusitania decision for Arcadia moved to revolutions and counterrevolutions (was mass politics)
+#Reworked starting global naval bases
+#Pontic Greek added as a new culture
+#
+# 2.1.1
+#
+#Rework of Starting Situation of Gran Colombian War of Independance
+#Cleaned up Cores of releasables in GC
+#Made Guiana a Genoese Colony
+#Made Manchuria 30LR from 35LR
+#Made Ceylon 32LR from 35LR
+#Reworked GC and Incan Decisions
+#Combat Width Increases after 1920 and 1925
+#Immigration Reworked
+#Removed choose Trade Policy decision
+#Gas Attack nerfed to +2 from +3
+#Gas Defence no longer negates gas attack, instead gives military hospitals
+#Return Home decisions now remove new_world_nation flag
+#
+# 2.2
+#
+#Added Straights and Canals to Copenhagen and Bosphorous
+#Nerfed India LR to 30 from 32
+#Day one event will now remove 20% of China's pops
+#Nerfed North Africa LR to 30 from 35
+#Nerfed Pop growth inventions in Medicine tech
+#Added decisions for Egypt thanks to Zedphyr
+#Added Strait between Kiel and Copenhagen
+#Removed more events
+#Nerfed Japanese and Korean literacy to 30%
+#Map Edits in Bosphorous, Denmark, Libya and Burma
+#Buffed Cavalry units but not Cavalry the unit
+#Last two arty tecks now give 1 attack instead of 0.5
+#Plane starting attack increased

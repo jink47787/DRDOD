@@ -1,0 +1,78 @@
+#The Inauguration of Pachacuti II
+country_event = {
+	id = 66898
+	title = "EVTNAME66898"
+	desc = "EVTDESC66898"
+	picture = "Inca"
+
+
+	trigger = {
+		tag = INC
+		year = 1842
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA66898"
+		government = hms_government
+		political_reform = wealth_voting
+		political_reform = censored_press
+		political_reform = gerrymandering
+		tech_school = traditional_academic
+		prestige = 25
+		any_pop = {
+			militancy = 4
+		}
+		add_country_modifier = {
+			name = pachacuti_reforms
+			duration = 3650
+		}
+		CLM = {
+			diplomatic_influence = {
+				who = INC
+				value = -150
+			}
+		}
+		set_global_flag = pachacuti_reforms
+	}
+}
+
+#Transcribing the Quipu
+country_event = {
+	id = 66899
+	title = "EVTNAME66899"
+	desc = "EVTDESC66899"
+	picture = "Quipu"
+
+
+	trigger = {
+		tag = INC
+		has_global_flag = pachacuti_reforms
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA66899"
+		prestige = 10
+		any_pop = {
+		      limit = {
+			    is_accepted_culture = yes
+				}
+			literacy = 0.2
+		}
+		add_country_modifier = {
+			name = transcribing_quipus
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,6 @@
+owner = PLM
+controller = PLM
+add_core = PLM
+add_core = NUS
+trade_goods = coal
+life_rating = 35

@@ -1,0 +1,28 @@
+owner = SCA
+controller = SCA
+add_core = SCA
+add_core = HOL
+add_core = GER
+trade_goods = cattle
+life_rating = 38
+naval_base = 2
+state_building = {
+	level = 2
+	building = clipper_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = paper_mill
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = HOL
+	controller = HOL
+	remove_core = SCA
+}

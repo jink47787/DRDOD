@@ -1,0 +1,12 @@
+owner = AZB
+controller = AZB
+add_core = ARY
+add_core = KUR
+add_core = AZB
+add_core = ARM
+trade_goods = cotton
+life_rating = 35
+1836.1.2 = {
+  owner = KUR
+  controller = KUR
+}

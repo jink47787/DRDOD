@@ -1,0 +1,6 @@
+owner = VIJ
+controller = VIJ
+add_core = DRA
+add_core = VIJ
+trade_goods = fruit
+life_rating = 30

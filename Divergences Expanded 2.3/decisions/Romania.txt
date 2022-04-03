@@ -1,0 +1,331 @@
+political_decisions = {
+	unite_principalities = {
+		potential = {
+			NOT = {	ROM = { exists = yes }	}
+			primary_culture = romanian
+		}
+
+		allow = {
+			NOT = { war = yes }
+			NOT = { is_vassal = yes }
+			OR = {
+				AND = {
+					MOL = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+					SIE = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+				}
+				AND = {
+					MOL = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+					WAL = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+				}
+				AND = {
+					SIE = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+					WAL = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = ROM
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = 11101
+			}
+		}
+	}
+
+	unite_with_romania = {
+		picture = create_romania
+		potential = {
+			is_culture_group = pan_romanian
+			exists = ROM
+			NOT = {
+				has_country_flag = unite_with_romania
+				tag = ROM
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				is_vassal = no
+				overlord = { is_our_vassal = ROM }
+			}
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = ROM }
+			}
+			ROM = {
+				war = no
+				neighbour = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = unite_with_romania
+			random_country = {
+				limit = {
+					tag = ROM
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = ROM
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					random_owned = {
+						limit = { province_id = 664 }
+						owner = { capital = 664 }
+					}
+					change_tag = ROM
+				}
+			}
+			random_country = {
+				limit = {
+					tag = ROM
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+	}
+
+	romanian_cherson = {
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = ROM_cherson }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			rank = 16
+			MOL = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			set_country_flag = ROM_cherson
+			badboy = 5
+			RUS_965 = { add_core = ROM }
+		}
+		ai_will_do = {
+    	factor = 1
+      modifier = { factor = 0 badboy = 0.8 }
+  	}
+	}
+
+	claim_tisza = {
+		picture = romanians_marching
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = claimed_tisza }
+			has_country_flag = minorities_integrated
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			SIE = { all_core = { owned_by = THIS } }
+		}
+
+		effect = {
+			set_country_flag = claimed_tisza
+			648 = { add_core = ROM }
+			650 = { add_core = ROM }
+			649 = { add_core = ROM }
+			792 = { add_core = ROM }
+		}
+	}
+
+	integrate_the_minorities_rom = {
+		potential = {
+			tag = ROM
+			NOT = { accepted_culture = bulgarian }
+			NOT = { has_country_flag = minorities_integrated }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			SIE = { all_core = { owned_by = THIS } }
+			WAL = { all_core = { owned_by = THIS } }
+			MOL = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			set_country_flag = minorities_integrated
+			add_accepted_culture = gypsy
+			add_accepted_culture = lower_danubian
+			add_accepted_culture = hungarian
+			add_accepted_culture = ashkenazi
+		}
+	}
+
+	integrate_the_crimeans_rom = {
+		potential = {
+			tag = ROM
+			has_country_flag = minorities_integrated
+			has_country_flag = ROM_cherson
+			NOT = { accepted_culture = crimean }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			owns = 968
+		}
+		effect = {
+			add_accepted_culture = crimean
+		}
+	}
+
+	balkan_dominance_rom = {
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = minorities_integrated }
+			NOT = { has_country_flag = balkan_dominance }
+		}
+		allow = {
+			BUL = { all_core = { owned_by = THIS } }
+			owns = 828
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = balkan_dominance
+			SER = { all_core = { add_core = THIS } }
+			MON = { all_core = { add_core = THIS } }
+			MAC = { all_core = { add_core = THIS } }
+			SLA = { all_core = { add_core = THIS } }
+			ALB = { all_core = { add_core = THIS } }
+			TUR_859 = { add_core = THIS }
+			TUR_860 = { add_core = THIS }
+		}
+	}
+
+	integrate_greeks_rom = {
+		potential = {
+			tag = ROM
+			NOT = { accepted_culture = greek }
+			has_country_flag = balkan_dominance
+		}
+		allow = {
+			MAC = { all_core = { owned_by = THIS } }
+			owns = 828
+			owns = 832
+			owns = 824
+		}
+		effect = {
+			add_accepted_culture = greek
+		}
+	}
+
+	integrate_serbs_rom = {
+		potential = {
+			tag = ROM
+			NOT = { accepted_culture = serb }
+			has_country_flag = balkan_dominance
+		}
+		allow = {
+			SER = { all_core = { owned_by = THIS } }
+			MON = { all_core = { owned_by = THIS } }
+			SLA = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			add_accepted_culture = serb
+		}
+	}
+
+	integrate_alb_rom = {
+		potential = {
+			tag = ROM
+			NOT = { accepted_culture = albanian }
+			has_country_flag = balkan_dominance
+		}
+		allow = {
+			ALB = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			add_accepted_culture = albanian
+		}
+	}
+
+	unite_carpathia = {
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = carpathia }
+			accepted_culture = hungarian
+		}
+		allow = {
+			SIE = { all_core = { owned_by = THIS } }
+			WAL = { all_core = { owned_by = THIS } }
+			MOL = { all_core = { owned_by = THIS } }
+			owns = 641
+		}
+		effect = {
+			AUS_641 = { add_core = THIS }
+			AUS_623 = { add_core = THIS }
+			SLV = { all_core = { add_core = THIS } }
+			SLA = { all_core = { add_core = THIS } }
+			624 = { add_core = THIS }
+			add_accepted_culture = slovak
+			set_country_flag = carpathia
+		}
+	}
+}
