@@ -1,0 +1,6 @@
+name = "DRDOD"
+path = "mod/DRDOD"
+user_dir = "DRDOD"
+replace_path = "history/provinces"
+replace_path = "events"
+replace_path = "decisions"

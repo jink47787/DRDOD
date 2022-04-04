@@ -1,0 +1,7 @@
+owner = CLM
+controller = SPA
+add_core = CLM
+add_core = YUC
+add_core = UCA
+trade_goods = cotton
+life_rating = 35

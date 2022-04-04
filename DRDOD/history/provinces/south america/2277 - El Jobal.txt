@@ -1,0 +1,8 @@
+owner = CLM
+controller = SPA
+add_core = CLM
+add_core = GRA
+add_core = TAP
+trade_goods = fruit
+life_rating = 20
+colonial = 2

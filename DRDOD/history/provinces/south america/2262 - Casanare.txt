@@ -1,0 +1,9 @@
+owner = CLM
+controller = SPA
+add_core = CLM
+add_core = GRA
+add_core = TAP
+trade_goods = cattle
+terrain = savanna
+life_rating = 20
+colonial = 2
