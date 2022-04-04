@@ -78,7 +78,7 @@ political_decisions = {
 		}
 	}
 
-		leave_soi = {
+	leave_soi = {
 		alert = no
 		picture = sign_the_geneva_convention
 		potential = {
@@ -98,21 +98,6 @@ political_decisions = {
 		effect = {
 			sphere_owner = {
 				country_event = 13202
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			# Ai will do, if sphere owner has LESS than thrice our brigades.
-			modifier = {
-				factor = 0
-				sphere_owner = {
-						# Factor = (sphere_owner regiments) / (our regiments).
-						# Returns true if( factor >= x ).
-						# Use NOT statement to check if( factor < x )
-						brigades_compare = 3
-				}
 			}
 		}
 	}
