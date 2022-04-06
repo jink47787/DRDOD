@@ -26,12 +26,8 @@ country_event = {
 		random_owned = {
 			limit = { owner = { is_culture_group = scandinavian } }
 			owner = {
-				add_accepted_culture = swedish
-				add_accepted_culture = danish
-				add_accepted_culture = norwegian
 				add_accepted_culture = finnish
 				add_accepted_culture = icelandic
-				add_accepted_culture = sami
 			}
 		}
 		random_owned = {
@@ -170,7 +166,6 @@ country_event = {
 					NOT = { tag = AUS }
 					NOT = { tag = KUK }
 					NOT = { tag = MOL }
-					NOT = { tag = SYL }
 					NOT = { tag = LUX }
 					NOT = { is_culture_group = south_asian }
 					NOT = { is_culture_group = scandinavian }
@@ -194,11 +189,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-                any_country = {
-				   limit = {
-				    owns = 564
-					}
-				}	
+				564 = { empty = no }
 			}
 			modifier = {
 				factor = 2

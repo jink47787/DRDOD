@@ -70,10 +70,6 @@ country_event = {
 			factor = 1.25
 			nationalvalue = nv_order
 		}
-		modifier = {
-			factor = 1.5
-			nationalvalue = nv_might
-		}	
 	}
 	
 	option = {
@@ -1403,19 +1399,6 @@ country_event = {
 				has_building = regular_clothes_factory
 				has_building = liquor_distillery
 				has_building = winery
-				has_building = wool_mill
-				has_building = fish_cannery
-				has_building = bakery
-				has_building = stables
-				has_building = rum_distillery
-				has_building = gunpowder_factory
-				has_building = bronze_artillery_factory
-				has_building = iron_artillery_factory
-				has_building = fruit_cannery
-				has_building = bronze_factory
-				has_building = early_small_arms_factory
-				has_building = late_small_arms_factory
-				has_building = newspaper
 			}
 			NOT = { poor_strata_everyday_needs = 0.9 }
 			any_owned_province = {
@@ -1462,19 +1445,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				NOT = { poor_strata_life_needs = 1.0 }			
 				any_owned_province = {
@@ -1506,19 +1476,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				NOT = { poor_strata_everyday_needs = 0.7 }			
 				any_owned_province = {
@@ -1550,19 +1507,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				NOT = { poor_strata_everyday_needs = 0.5 }			
 				any_owned_province = {
@@ -1594,19 +1538,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				average_militancy = 2			
 				any_owned_province = {
@@ -1624,10 +1555,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_might
-			}
+			nationalvalue = nv_order
 		}
 	}
 	option = {
@@ -1658,19 +1586,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				NOT = { poor_strata_everyday_needs = 0.9 }
 				any_owned_province = {
@@ -1756,19 +1671,6 @@ country_event = {
 					has_building = regular_clothes_factory
 					has_building = liquor_distillery
 					has_building = winery
-					has_building = wool_mill
-					has_building = fish_cannery
-					has_building = bakery
-					has_building = stables
-					has_building = rum_distillery
-					has_building = gunpowder_factory
-					has_building = bronze_artillery_factory
-					has_building = iron_artillery_factory
-					has_building = fruit_cannery
-					has_building = bronze_factory
-					has_building = early_small_arms_factory
-					has_building = late_small_arms_factory
-					has_building = newspaper
 				}
 				NOT = { poor_strata_everyday_needs = 0.9 }
 				any_owned_province = {
@@ -2240,10 +2142,6 @@ province_event = {
 				NOT = { is_culture_group = scandinavian	}
 			}
 		}
-		modifier = {
-			factor = 1.5
-			owner = { nationalvalue = nv_might }
-		}
 	}
 	option = {
 		name = "EVTOPTA10170"
@@ -2568,10 +2466,7 @@ province_event = {
 		modifier = {
 			factor = 1.5
 			owner = {
-				OR = {
-					nationalvalue = nv_order
-					nationalvalue = nv_might
-				}
+				nationalvalue = nv_order
 			}
 		}
 	}
@@ -2770,10 +2665,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_might
-			}
+			nationalvalue = nv_order
 		}
 	}
 
@@ -2953,10 +2845,7 @@ province_event = {
 		modifier = {
 			factor = 1.5
 			owner = {
-				OR = {
-					nationalvalue = nv_order
-					nationalvalue = nv_might
-				}
+				nationalvalue = nv_order
 			}
 		}
 	}
@@ -3479,12 +3368,6 @@ province_event = {
 					nationalvalue = nv_liberty
 					nationalvalue = nv_equality
 				}
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				nationalvalue = nv_might
 			}
 		}
 	}
@@ -4074,10 +3957,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_might
-			}
+			nationalvalue = nv_order
 		}
 	}
 	
@@ -4614,10 +4494,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_might
-			}
+			nationalvalue = nv_order
 		}
 	}
 	

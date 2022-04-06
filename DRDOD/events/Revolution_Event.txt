@@ -170,10 +170,6 @@ country_event = {
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = paramilitaries_outlawed
 		clr_country_flag = rebels_in_capital
-		random_owned = { 
-			limit = { owner = { primary_culture = british accepted_culture = irish } } 
-			owner = { remove_accepted_culture = irish }
-		}
 		
 		random_owned = { 
 			limit = { owner = { tag = XIN } } 
@@ -1448,14 +1444,9 @@ country_event = {
 			owner = { primary_culture = fulbe }
 		}
 		random_owned = {
-			limit = { owner = { tag = BUG } }
-			owner = { primary_culture = baganda }
-		}
-		random_owned = {
 			limit = {
 				owner = {
 					OR = {
-						tag = CGO
 						tag = CNG
 						tag = ANG
 					}
@@ -1464,28 +1455,8 @@ country_event = {
 			owner = { primary_culture = bakongo }
 		}
 		random_owned = {
-			limit = { owner = { tag = CHD } }
-			owner = { primary_culture = sara }
-		}
-		random_owned = {
-			limit = { owner = { tag = CAR } }
-			owner = { primary_culture = ubangian }
-		}
-		random_owned = {
-			limit = { owner = { tag = GAB } }
-			owner = { primary_culture = fang }
-		}
-		random_owned = {
-			limit = { owner = { tag = CMR } }
-			owner = { primary_culture = forest_bantu }
-		}
-		random_owned = {
 			limit = { owner = { tag = INO } }
 			owner = { primary_culture = javan }
-		}
-		random_owned = {
-			limit = { owner = { tag = IVC } }
-			owner = { primary_culture = dyula }
 		}
 		random_owned = {
 			limit = {
@@ -1518,10 +1489,6 @@ country_event = {
 			owner = { primary_culture = hausa }
 		}
 		random_owned = {
-			limit = { owner = { tag = GNE } }
-			owner = { primary_culture = fulbe }
-		}
-		random_owned = {
 			limit = {
 				owner = { tag = SNG }
 			}
@@ -1535,51 +1502,12 @@ country_event = {
 		}
 		random_owned = {
 			limit = {
-				owner = { tag = TOG }
-			}
-			owner = { primary_culture = ewe }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = BKF }
-			}
-			owner = { primary_culture = mossi }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = TSW }
-			}
-			owner = { primary_culture = tswana }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = ZAM }
-			}
-			owner = { primary_culture = lunda }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = SLE }
-			}
-			owner = { primary_culture = western_nigritic }
-		}
-		random_owned = {
-			limit = { owner = { tag = GNE } }
-			owner = { primary_culture = mande }
-		}
-		random_owned = {
-			limit = { owner = { tag = GMB } }
-			owner = { primary_culture = mande }
-		}
-		random_owned = {
-			limit = {
 				owner = { tag = NZL }
 			}
 			owner = {
 				all_core = { add_core = AOT }
 				change_tag = AOT
 				primary_culture = maori
-				add_accepted_culture = british
 				relation = { who = ENG value = -200 }
 				relation = { who = AST value = -200 }
 				add_casus_belli = {
@@ -1605,8 +1533,6 @@ country_event = {
 			owner = {
 				primary_culture = khoisan
 				add_accepted_culture = sotho
-				add_accepted_culture = xhosa
-				add_accepted_culture = zulu
 				add_accepted_culture = nguni
 			}
 		}
@@ -3063,7 +2989,6 @@ country_event = {
 					OR = {
 						tag = MAH
 						tag = MUG
-						tag = BNG
 					}
 				}
 			}

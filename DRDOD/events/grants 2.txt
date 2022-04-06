@@ -242,72 +242,79 @@ country_event = {
 	money = -2000000
 	FROM = {money = 2000000}
 	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "3000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -1000000
-	FROM = {money = 1000000}
-	}  
+		name = "3000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -1000000
+		FROM = {money = 1000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "4000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	}  
+		name = "4000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "5000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -1000000
-	FROM = {money = 1000000}
-	}  
+		name = "5000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -1000000
+		FROM = {money = 1000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "6000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	}  
+		name = "6000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "7000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -1000000
-	FROM = {money = 1000000}
-	}  
+		name = "7000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -1000000
+		FROM = {money = 1000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "8000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	}  
+		name = "8000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+	}
+	# Audax Validator "." Ignore_NEXT
 	option = {
-	name = "9000000 pounds"
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -2000000
-	FROM = {money = 2000000}
-	money = -1000000
-	FROM = {money = 1000000}
+		name = "9000000 pounds"
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -2000000
+		FROM = {money = 2000000}
+		money = -1000000
+		FROM = {money = 1000000}
 	}  
 }
 

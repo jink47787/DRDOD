@@ -732,10 +732,10 @@ province_event = {
 			region = RUS_2621
 			region = RUS_1079
 			region = RUS_1469
-			region = RUS_1075
+			#region = RUS_1075
 			region = RUS_2694
 			region = RUS_2615
-			region = RUS_1070
+			#region = RUS_1070
 			region = MON_1075
 		}
 		owned_by = THIS

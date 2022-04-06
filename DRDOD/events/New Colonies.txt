@@ -273,7 +273,7 @@ province_event = {
 		OR = {
 			region = NET_1451 #West New Guinea
 			region = AST_2529 #Southeast New Guinea
-			region = GER_2531 #Northeast New Guinea
+			#region = GER_2531 #Northeast New Guinea
 		}
 		owned_by = THIS
 		controlled_by = THIS

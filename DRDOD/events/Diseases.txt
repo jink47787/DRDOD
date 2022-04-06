@@ -45,9 +45,24 @@ country_event = {
 	option = {
 		name = "EVTOPTA21000"
 		random_list = {
-		50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = -0.5 } } }
-		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.97 militancy = -0.5 } } }
-		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.95 militancy = -0.5 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = -0.5 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.97 militancy = -0.5 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.95 militancy = -0.5 }
+				}
+			}
 		}
 	}
 }
@@ -80,9 +95,24 @@ country_event = {
 	option = {
 		name = "EVTOPTA21010"
 		random_list = {
-			50 = { random_state = { limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.96 } } }
-			25 = { random_state = { limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.98 } } }
-			25 = { random_state = { limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.99 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.96 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.98 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 20000 } poor_strata = { reduce_pop = 0.99 }
+				}
+			}
 		}
 		add_tax_relative_income	= -5
 		#treasury = -1500
@@ -98,9 +128,24 @@ country_event = {
 	option = {
 		name = "EVTOPTB21010"
 		random_list = {
-			50 = { random_state = { limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.9 militancy = 1 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.88 militancy = 1 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.86 militancy = 1 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.9 militancy = 1 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.88 militancy = 1 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } poor_strata = { reduce_pop = 0.86 militancy = 1 }
+				}
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -192,9 +237,24 @@ country_event = {
 	option = {
 		name = "EVTOPTB21020"
 		random_list = {
-		50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = 2 } } }
-		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.97 militancy = 2 } } }
-		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.95 militancy = 2 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = 2 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.97 militancy = 2 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.95 militancy = 2 }
+				}
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -387,7 +447,6 @@ country_event = {
 		modifier = {
 			factor = 1.5
 			has_country_modifier = uncivilized_isolationism
-			NOT = { is_culture_group = indo_iranian }
 			NOT = { is_culture_group = south_asian }
 		}
 		modifier = {
@@ -577,9 +636,24 @@ country_event = {
 	option = {
 		name = "EVTOPTA21040"
 		random_list = {
-			50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.9 consciousness = 2 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.89 consciousness = 2 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.91 consciousness = 2 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.9 consciousness = 2 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.89 consciousness = 2 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.91 consciousness = 2 }
+				}
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -589,9 +663,24 @@ country_event = {
 	option = {
 		name = "EVTOPTB21040"
 		random_list = {
-			50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.85 militancy = -1 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.84 militancy = -1 } } }
-			25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.86 militancy = -1 } } }
+			50 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.85 militancy = -1 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.84 militancy = -1 }
+				}
+			}
+			25 = {
+				random_state = {
+					# Audax Validator "." Ignore_NEXT
+					limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.86 militancy = -1 }
+				}
+			}
 		}
 		ai_chance = {
 			factor = 0

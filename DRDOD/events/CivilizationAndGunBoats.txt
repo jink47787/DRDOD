@@ -44,10 +44,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				OR = {
-					is_culture_group = east_asian
-					is_culture_group = far_east_asian
-				}
+				is_culture_group = east_asian
 			}
 			modifier = {
 				factor = 0.5
@@ -166,10 +163,7 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0
-				OR = {
-					is_culture_group = far_east_asian
-					is_culture_group = east_asian
-				}
+				is_culture_group = east_asian
 			}
 		}
 	}
@@ -3784,47 +3778,6 @@ country_event = {
 	}
 }
 
-### UNCIV FLAVOR ###
-# SIA -- An Elephant for America?
-country_event = {
-	id = 13350
-	title = "EVTNAME13350"
-	desc = "EVTDESC13350"
-	picture = "elephant"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA13350"
-		relation = {
-			who = FROM
-			value = 30
-		}
-	}
-}
-
-#Torching of The Summer Palace
-country_event = {
-	id = 13355
-	title = "EVTNAME13355"
-	desc = "EVTDESC13355"
-	news = yes
-	news_desc_long = "EVTDESC13355_NEWS_LONG"
-	news_desc_medium = "EVTDESC13355_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13355_NEWS_SHORT"
-	major = yes
-	picture = "cityfire"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA13355"
-		prestige = -25
-		war_exhaustion = 5
-		1612 = { clr_province_flag = summer_palace }
-	}
-}
-
 #Doctrine of Lapse 1/2
 country_event = {
 	id = 13357
@@ -3861,7 +3814,6 @@ country_event = {
 			primary_culture = malayalam
 			primary_culture = tamil
 			primary_culture = telegu
-			tag = CRL
 		}
 	}
 	
@@ -3905,14 +3857,10 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.1
-			OR = {
-				tag = BHP
-				tag = CRL
-				NOT = {
-					government = absolute_monarchy
-					government = prussian_constitutionalism
-					government = hms_government
-				}
+			NOT = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
 			}
 		}
 	}
@@ -4027,7 +3975,6 @@ country_event = {
 					tag = YNN
 					tag = GXI
 					tag = GNG
-					tag = FJN
 				}
 			}
 		}
@@ -4461,224 +4408,6 @@ country_event = {
 			}
 		}
 		ai_chance = { factor = 0 }
-	}
-}
-
-#Requesting Foreign Missionaries
-country_event = {
-	id = 90960
-	title = "EVTNAME90960"
-	desc = "EVTDESC90960"
-	picture = "missionaries"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT90960OPTA" #Catholic
-		set_country_flag = change_to_catholic
-		random_country = {
-			limit = {
-				exists = yes
-				OR = {
-					AND = {
-						is_greater_power = yes
-						has_country_flag = catholic_country
-					}
-					tag = FRA
-				}
-			}
-			country_event = 90961
-		}
-		ai_chance = {
-			factor = 25
-			modifier = { factor = 100 any_neighbor_country = { is_greater_power = yes has_country_flag = catholic_country } }
-		}
-	}
-	
-	option = {
-		name = "EVT90960OPTB" #Protestant
-		set_country_flag = change_to_protestant
-		random_country = {
-			limit = {
-				exists = yes
-				OR = {
-					AND = {
-						is_greater_power = yes
-						has_country_flag = protestant_country
-					}
-					tag = ENG
-					tag = ENL
-				}
-			}
-			country_event = 90961
-		}
-		ai_chance = {
-			factor = 25
-			modifier = { factor = 100 any_neighbor_country = { is_greater_power = yes has_country_flag = protestant_country } }
-		}
-	}
-	
-	option = {
-		name = "EVT90960OPTC" #Orthodox
-		set_country_flag = change_to_orthodox
-		random_country = {
-			limit = {
-				exists = yes
-				OR = {
-					AND = {
-						is_greater_power = yes
-						has_country_flag = orthodox_country
-					}
-					tag = RUS
-				}
-			}
-			country_event = 90961
-		}
-		ai_chance = {
-			factor = 25
-			modifier = { factor = 100 any_neighbor_country = { is_greater_power = yes has_country_flag = orthodox_country } }
-		}
-	}
-	
-	option = {
-		name = "EVT90960OPTD" #Sunni
-		set_country_flag = change_to_sunni
-		random_country = {
-			limit = {
-				exists = yes
-				OR = {
-					AND = {
-						is_greater_power = yes
-						has_country_flag = sunni_country
-					}
-					tag = TUR
-				}
-			}
-			country_event = 90961
-		}
-		ai_chance = {
-			factor = 25
-			modifier = { factor = 100 any_neighbor_country = { is_greater_power = yes has_country_flag = sunni_country } }
-		}
-	}
-	
-	option = {
-		name = "EVT90960OPTE" #Nevermind
-		prestige = 3
-		ai_chance = { factor = 0 }
-	}
-	
-}
-
-#Requesting Foreign Missionaries - GPs decide what to do
-country_event = {
-	id = 90961
-	title = "EVTNAME90961"
-	desc = "EVTDESC90961"
-	picture = "missionaries"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT90961OPTA" #Send the missionaries
-		relation = { who = FROM value = 25 }
-		diplomatic_influence = { who = FROM value = 25 }
-		FROM = { country_event = 90962 }
-		ai_chance = {
-			factor = 50
-			modifier = { factor = 0 NOT = { relation = { who = FROM value = -190 } } }
-			modifier = { factor = 0.5 NOT = { relation = { who = FROM value = -100 } } }
-			modifier = { factor = 0.75 NOT = { relation = { who = FROM value = -50 } } }
-			modifier = { factor = 0.75 NOT = { relation = { who = FROM value = 0 } } }
-			modifier = { factor = 1.1 relation = { who = FROM value = 50 } }
-			modifier = { factor = 1.15 relation = { who = FROM value = 100 } }
-			modifier = { factor = 1.35 relation = { who = FROM value = 150 } }
-			modifier = { factor = 0.9 FROM = { average_militancy = 4 } }
-			modifier = { factor = 0.75 FROM = { average_militancy = 6 } }
-			modifier = { factor = 0.75 FROM = { average_militancy = 8 } }
-			modifier = { factor = 0.5 FROM = { badboy = 0.5 } }
-		}
-	}
-	
-	option = {
-		name = "EVT90961OPTB" #Send the missionaries
-		relation = { who = FROM value = -25 }
-		FROM = { country_event = 90963 }
-		ai_chance = {
-			factor = 50
-		}
-	}
-}
-
-#Requesting Foreign Missionaries - GPs Accepted
-country_event = {
-	id = 90962
-	title = "EVTNAME90962"
-	desc = "EVTDESC90962"
-	picture = "missionaries"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT90962OPTA"
-		add_country_modifier = { name = missionary_activity duration = 1825 }
-		clr_country_flag = animist_country
-		clr_country_flag = lacking_writing_system
-		remove_country_modifier = lacks_writing_system
-		random_owned = {
-			limit = { owner = { has_country_flag = change_to_catholic } }
-			owner = {
-				religion = catholic
-				set_country_flag = catholic_country
-				clr_country_flag = change_to_catholic
-				FROM = { relation = { who = THIS value = 150 } diplomatic_influence = { who = THIS value = 100 } }
-			}
-		}
-		random_owned = {
-			limit = { owner = { has_country_flag = change_to_protestant } }
-			owner = {
-				religion = protestant
-				set_country_flag = protestant_country
-				clr_country_flag = change_to_protestant
-				FROM = { relation = { who = THIS value = 150 } diplomatic_influence = { who = THIS value = 100 } }
-			}
-		}
-		random_owned = {
-			limit = { owner = { has_country_flag = change_to_orthodox } }
-			owner = {
-				religion = orthodox
-				set_country_flag = orthodox_country
-				clr_country_flag = change_to_orthodox
-				FROM = { relation = { who = THIS value = 150 } diplomatic_influence = { who = THIS value = 100 } }
-			}
-		}
-		random_owned = {
-			limit = { owner = { has_country_flag = change_to_sunni } }
-			owner = {
-				religion = sunni
-				set_country_flag = sunni_country
-				clr_country_flag = change_to_sunni
-				FROM = { relation = { who = THIS value = 150 } diplomatic_influence = { who = THIS value = 100 } }
-			}
-		}
-	}
-}
-
-#Requesting Foreign Missionaries - GP refused
-country_event = {
-	id = 90963
-	title = "EVTNAME90963"
-	desc = "EVTDESC90963"
-	picture = "missionaries"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT90963OPTA"
-		clr_country_flag = change_to_sunni
-		clr_country_flag = change_to_orthodox
-		clr_country_flag = change_to_protestant
-		clr_country_flag = change_to_catholic
 	}
 }
 

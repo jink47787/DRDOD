@@ -1,26 +1,4 @@
-country_event = {
-	id = 124100 #Declaration - reaction event
-	title = "EVTNAME124100"
-	desc = "EVTDESC124100"
-	picture = "?"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA124100"
-		relation = {
-			who = FROM
-			value = -200
-		}
-		FROM = {
-			add_casus_belli = {
-				target = THIS
-				type = release_puppet
-				months = 24
-			}
-		}
-	}
-}
+
 
 country_event = {
 	id = 124101 #Declaration - reaction event II

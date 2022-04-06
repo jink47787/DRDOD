@@ -804,214 +804,6 @@ country_event = {
 #####################
 
 country_event = {
-	id = 123113 # A Pact with Italia ?
-	title = "GER3.T"
-	desc = "GER3.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "123113.A"
-	set_country_flag = secret_pact_ITA
-	FROM = { country_event = 123114 }
-	ai_chance = {
-	factor = 70
-		}
-	}
-
-	option = {
-	name = "123113.B"
-	FROM = { country_event = 123115 }
-	ai_chance = {
-	factor = 30
-	modifier = {
-	factor = 2
-	NOT = { relation = { who = FROM value = -100 } }
-			}
-	modifier = {
-	factor = 1.5
-	NOT = { relation = { who = FROM value = 0 } }
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 123114 # Secret Pact with Paris
-	title = "GER4.T"
-	desc = "GER4.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "123114.A"
-	relation = { who = DUA value = 75 }
-	}
-}
-
-country_event = {
-	id = 123115 # Paris refused
-	title = "GER5.T"
-	desc = "GER5.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "123115.A"
-	relation = { who = DUA value = -75 }
-	set_country_flag = never_forget_DUA
-	}
-}
-
-country_event = {
-	id = 123116 #The Bavarian Republic
-	title = "GER6.T"
-	desc = "GER6.D"
-
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-	name = "123116.A"
-	government = democracy
-	ruling_party_ideology = liberal
-	political_reform = universal_voting
-	political_reform = state_equal_weight
-	political_reform = yes_meeting
-	political_reform = free_press
-	political_reform = non_socialist
-	political_reform = secret_ballots
-	relation = { who = FROM value = 300 }
-	create_alliance = FROM
-	add_country_modifier = { name = taiping_draft duration = 1200 }
-	add_accepted_culture = rheinish
-	treasury = 10000
-	ammunition = 1000
-	small_arms = 1000
-	artillery = 1000
-	canned_food = 1000
-	regular_clothes = 1000
-	#Austria
-		AUS = {
-			all_core = {
-				limit = {
-					is_core = GER
-				}
-				add_core = SGF
-			}
-		}
-		#Bavaria
-		BAV = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Wurtemberg
-		WUR = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Baden
-		BAD = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Swiss
-		SWI = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Tirol
-		AUS_612 = {
-			add_core = SGF
-		}
-	change_tag = SGF
-	any_country = { limit = { primary_culture = south_german } country_event = 123117 }
-	any_country = { limit = { primary_culture = rheinish } country_event = 123118 }
-	any_country = { limit = { has_country_flag = anschluss_DUA } create_alliance = THIS }
-	BOH = {
-			country_event = { id = 123104 days = 30 }
-		}
-	BRG = {
-			country_event = { id = 123105 days = 30 }
-		}
-	}
-}
-
-country_event = {
-	id = 123117 #The Danubian options
-	title = "GER7.T"
-	desc = "GER7.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "123117.A"
-	FROM = { inherit = THIS }
-	ai_chance = { factor = 100 }
-	}
-
-	option = {
-	name = "123117.B"
-	}
-}
-
-country_event = {
-	id = 123118 #The Rhenish options
-	title = "GER8.T"
-	desc = "GER8.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "123118.A"
-	FROM = { inherit = THIS }
-	ai_chance = { factor = 35
-	modifier = {
-	factor = 0
-	ruling_party_ideology = reactionary
-			}
-	modifier = {
-	factor = 0
-	government = theocracy
-			}
-	modifier = {
-	factor = 0
-	government = absolute_monarchy
-			}
-	modifier = {
-	factor = 2.5
-	government = democracy
-			}
-		}
-	}
-
-	option = {
-	name = "123118.B"
-	relation = { who = FROM value = -100}
-	ai_chance = {
-			factor = 65
-			modifier = {
-				factor = 0
-				ruling_party_ideology = liberal
-			}
-			modifier = {
-				factor = 0
-				ruling_party_ideology = anarcho_liberal
-			}
-			modifier = {
-				factor = 0
-				is_greater_power = yes
-			}
-		}
-	}
-}
-
-country_event = {
 	id = 123119 #Anglois intervention in Burgundy
 	title = "GER9.T"
 	desc = "GER9.D"
@@ -1083,66 +875,65 @@ country_event = {
 	major = yes
 
 	trigger = {
-	year = 1936
-	tag = BOH
-	owns = 549
-	owns = 546
-	NOT = { owns = 369 }
-	war_with = SGF
-	NOT = { has_country_flag = berlin_commune }
-	has_country_flag = german_unrest
+		year = 1936
+		tag = BOH
+		owns = 549
+		owns = 546
+		NOT = { owns = 369 }
+		war_with = SGF
+		NOT = { has_country_flag = berlin_commune }
+		has_country_flag = german_unrest
 	}
 
 	mean_time_to_happen = {
-	months = 2
+		months = 2
 	}
 
 	option = {
-	name = "123131.A"
-	set_country_flag = berlin_commune
-	any_owned = {
-	limit = {
-	OR = { is_core = POM is_core = HOL is_core = BRN }
+		name = "123131.A"
+		set_country_flag = berlin_commune
+		any_owned = {
+			limit = {
+				OR = { is_core = POM is_core = HOL is_core = BRN }
 			}
-	secede_province = NGF
-	}
-	PRU_572 = { add_core = NGF } 	#Rhineland
-	HES_2560 = { add_core = NGF }	#Palatinate
-	PRU_575 = { add_core = NGF }	#Nordrhein
-	HES_566 = { add_core = NGF }	#Hessen
-	PRU_581 = { add_core = NGF }	#Westphalia
-	HAN_534 = { add_core = NGF }	#East Frisia
-	HAM_528 = { add_core = NGF }	#Hanover
-	PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
-	SAX_1 = { add_core = NGF }		#Thuringia
-	HOL_369 = { add_core = NGF }	#Holstein
-	PRU_553 = { add_core = NGF }	#Anhalt
-	PRU_549 = { add_core = NGF }	#Brandenburg
-	SAX_558 = { add_core = NGF }	#Saxony
-	NGF = {
-	government = democracy
-	ruling_party_ideology = liberal
-	political_reform = universal_voting
-	political_reform = state_equal_weight
-	political_reform = yes_meeting
-	political_reform = free_press
-	political_reform = non_socialist
-	political_reform = secret_ballots
-	capital = 549
-	treasury = 10000
-	ammunition = 1000
-	small_arms = 1000
-	artillery = 1000
-	canned_food = 1000
-	regular_clothes = 1000
-	add_country_modifier = {
+			secede_province = NGF
+		}
+		PRU_572 = { add_core = NGF } 	#Rhineland
+		HES_2560 = { add_core = NGF }	#Palatinate
+		PRU_575 = { add_core = NGF }	#Nordrhein
+		HES_566 = { add_core = NGF }	#Hessen
+		PRU_581 = { add_core = NGF }	#Westphalia
+		HAN_534 = { add_core = NGF }	#East Frisia
+		HAM_528 = { add_core = NGF }	#Hanover
+		PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
+		SAX_1 = { add_core = NGF }		#Thuringia
+		HOL_369 = { add_core = NGF }	#Holstein
+		PRU_553 = { add_core = NGF }	#Anhalt
+		PRU_549 = { add_core = NGF }	#Brandenburg
+		SAX_558 = { add_core = NGF }	#Saxony
+		NGF = {
+			government = democracy
+			ruling_party_ideology = liberal
+			political_reform = universal_voting
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = non_socialist
+			political_reform = secret_ballots
+			capital = 549
+			treasury = 10000
+			ammunition = 1000
+			small_arms = 1000
+			artillery = 1000
+			canned_food = 1000
+			regular_clothes = 1000
+			add_country_modifier = {
 				name = taiping_draft
 				duration = 365
-				}
 			}
-	BOH = { NGF = { split_troops = 0.30 } }
-	any_country = { limit = { primary_culture = north_german } country_event = 123132 }
-	country_event = { id = 123133 days = 15 }
+		}
+		any_country = { limit = { primary_culture = north_german } country_event = 123132 }
+		country_event = { id = 123133 days = 15 }
 	}
 }
 
@@ -1354,17 +1145,16 @@ country_event = {
 	mean_time_to_happen =  { months = 12 }
 
 	option = {
-	name = "123138.A"
-	prestige = 2
-	set_country_flag = cleanupSGF
-	any_owned = {
-	remove_core = BAV
-	remove_core = AUS
-	remove_core = TIR
-	remove_core = SAL
-	remove_core = BAD
-	remove_core = WUR
-	remove_core = SWI
+		name = "123138.A"
+		prestige = 2
+		set_country_flag = cleanupSGF
+		any_owned = {
+			remove_core = BAV
+			remove_core = AUS
+			remove_core = TIR
+			remove_core = BAD
+			remove_core = WUR
+			remove_core = SWI
 		}
 	}
 }
@@ -1441,16 +1231,16 @@ country_event = {
 	annex_to = THIS
 		}
 	any_country = {
-	limit = {
-		OR = {
-			primary_culture = south_german
-			primary_culture = rheinish
-			primary_culture = north_german
-			is_greater_power = no
-				}
+		limit = {
+			OR = {
+				primary_culture = south_german
+				primary_culture = rheinish
+				primary_culture = north_german
+				is_greater_power = no
 			}
-	event = 11106
 		}
+		country_event = 11106
+	}
 	any_country = {
 				limit = {
 					is_culture_group = germanic
@@ -1470,9 +1260,11 @@ country_event = {
 	}
 
 	option = {
-	name = "GER29.B"
-	prestige = -5
-	militancy = 5
+		name = "GER29.B"
+		prestige = -5
+		any_pop = {
+			militancy = 5
+		}
 	}
 
 }

@@ -108,27 +108,11 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier = national_tragedy }
-		invention = industrial_railroads
+		early_railroad = 1
 	}
 	
 	mean_time_to_happen = {
-		months = 900		  
-		modifier = {
-			factor = 0.95
-			invention = the_iron_horse
-		}
-		modifier = {
-			factor = 0.95
-			invention = commercial_railroads
-		}
-		modifier = {
-			factor = 0.95
-			invention = arteries_of_commerce
-		}
-		modifier = {
-			factor = 0.95
-			invention = autobahn
-		}
+		months = 900
 		modifier = {
 			factor = 0.75
 			safety_regulations = no_safety

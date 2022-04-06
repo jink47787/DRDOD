@@ -1047,7 +1047,6 @@ country_event = {
 					tag = PNJ
 					tag = MUG
 					tag = HYD
-					tag = BNG
 					primary_culture = THIS
 				}
 				THIS = {
@@ -1270,12 +1269,8 @@ country_event = {
 				government = hms_government
 				all_core = { remove_core = THIS }
 				change_tag = SCA
-				add_accepted_culture = swedish
-				add_accepted_culture = danish
-				add_accepted_culture = norwegian
 				add_accepted_culture = finnish
 				add_accepted_culture = icelandic
-				add_accepted_culture = sami
 			}
 			any_country = {
 				limit = {

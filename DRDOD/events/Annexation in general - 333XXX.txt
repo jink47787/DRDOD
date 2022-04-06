@@ -102,53 +102,6 @@ country_event = {
 	}
 }
 
-# Rohnnst
-country_event = {
-	id = 333009
-	title = "EVTNAME333009"
-	desc = "EVTDESC333009"
-	picture = "greatpowers"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA333009"
-		FROM = {
-			inherit = HHR
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
-
-	option = {
-		name = "EVTOPTB333009"
-		prestige = 10
-		badboy = 5
-		FROM = {
-			casus_belli = {
-			type = conquest
-			target = HHR
-			months = 60
-			}
-			prestige = -10
-			war = {
-				target = HHR
-				attacker_goal = {
-					casus_belli = conquest
-				}
-
-				defender_goal = {
-					casus_belli = status_quo
-				}
-			}
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
-}
-
 # Zanzibar Cores I
 country_event = {
 	id = 333010
@@ -824,22 +777,6 @@ country_event = {
 	}
 	ai_chance = {
 	factor = 10
-		}
-	}
-}
-
-#Generic Annex Puppet event
-country_event = {
-	id = annexpuppet
-	title = "annexpuppet.T"
-	desc = "annexpuppet.D"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "annexpuppet.A"
-		FROM = {
-			inherit = THIS
 		}
 	}
 }

@@ -1,48 +1,4 @@
-#Vinland Claims Scandinavia
 
-country_event = {
-
-  id = 600001
-  title = "600001.T"
-  desc = "600001.D"
-  is_triggered_only = yes
-
-  option = {
-    name = "600001.A"
-    badboy = -5
-    ai_chance = {
-			factor = 0
-		}
-  }
-  option = {
-    name = "600001.B"
-    set_country_flag = scandi_claimed_vinland
-    add_accepted_culture = vinlander
-    ai_chance = {
-			factor = 100
-		}
-  }
-  option = {
-    name = "600001.C"
-    badboy = 10
-    set_country_flag = scandi_claimed_vinland
-    add_accepted_culture = vinlander
-    casus_belli = {
-      target = VIN
-      type = conquest
-      months = 24
-    }
-    war = {
-      target = VIN
-      attacker_goal = {
-        casus_belli = conquest
-      }
-    }
-    ai_chance = {
-			factor = 0
-		}
-  }
-}
 
 #Baltic Empire Loses Scotland
 

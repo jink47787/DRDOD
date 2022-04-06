@@ -387,17 +387,9 @@ country_event = {
 					remove_core = THIS
 				}
 			}
-		CRC = {
-			all_core = {
-				remove_core = THIS
-			}
-		}
 		any_owned = {
 			limit = {
-				OR = {
-					is_core = JAM
-					is_core = CRC
-				}
+				is_core = JAM
 			}
 			secede_province = FROM
 		}
@@ -429,16 +421,7 @@ country_event = {
 		name = "135631.A"
 		prestige = 5
 		money = -150000
-		JAM = {
-			all_core = {
-					add_core = THIS
-				}
-			}
-		CRC = {
-			all_core = {
-					add_core = THIS
-				}
-			}
+		JAM = { all_core = { add_core = THIS } }
 		relation = { who = FROM value = 50 }
 		any_pop = { consciousness = -1 }
 	}

@@ -23,10 +23,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -87,10 +83,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -123,10 +115,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 				unemployment = 0.05
@@ -175,10 +163,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 					unemployment = 0.05
@@ -208,10 +192,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 					unemployment = 0.05
@@ -246,10 +226,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -302,10 +278,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -331,7 +303,7 @@ province_event = {
 	desc = "EVTDESC2030"
 	
 	trigger = {
-		has_recent_imigration = yes
+		has_recent_imigration = 60
 		is_colonial = no
 		owner = {
 			civilized = yes
@@ -402,10 +374,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -454,10 +422,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -486,10 +450,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -526,10 +486,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -582,10 +538,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -616,10 +568,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -656,10 +604,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -705,10 +649,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -738,10 +678,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -778,10 +714,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -824,10 +756,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -866,10 +794,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -923,10 +847,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -954,10 +874,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -993,10 +909,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -1039,10 +951,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -1074,10 +982,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -1116,10 +1020,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -1164,10 +1064,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -1207,10 +1103,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -1258,10 +1150,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -1292,10 +1180,6 @@ country_event = {
 			any_pop = {
 				NOT = {
 					is_culture_group = oceanic
-					is_culture_group = native_american
-					is_culture_group = american_cultures
-					is_culture_group = neo_european_cultures
-					is_culture_group = latin_american_cultures
 					is_culture_group = african_diaspora_cultures
 				}
 			}
@@ -1341,10 +1225,6 @@ country_event = {
 				any_pop = {
 					NOT = {
 						is_culture_group = oceanic
-						is_culture_group = native_american
-						is_culture_group = american_cultures
-						is_culture_group = neo_european_cultures
-						is_culture_group = latin_american_cultures
 						is_culture_group = african_diaspora_cultures
 					}
 				}
@@ -1374,7 +1254,7 @@ province_event = {
 	desc = "EVTDESC2130"
 	
 	trigger = {
-		has_recent_imigration = yes
+		has_recent_imigration = 60
 		has_national_minority = yes
 		owner = {
 			civilized = yes
