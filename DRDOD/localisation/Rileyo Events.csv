@@ -1,4 +1,4 @@
-;;;;;;;;;;;;;
+Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
 500001.T;The Purchase of Greenland?;;;;;;;;;;;;;
 500001.D;Stating Greenland's Proximity to Vinland, we have been approached to sell Greenland. Shall We?;;;;;;;;;;;;;
 500001.A;Let's do it, it's worthless anyway;;;;;;;;;;;;;
@@ -108,7 +108,7 @@ CONGR18.D;The reconquest and integration of the spanish colonies back under the 
 500085.A;A great day for commerce, explorers and cartographers alike!;;;;;;;;;;;;;
 500086.T;Discovery of the North-East Passage!;;;;;;;;;;;;;
 500086.D;Our intrepid explorers have finally made it across the dangerous waters of the Siberian arctic circle! Now with it chartered we can use this for shipping in the warm summer months!;;;;;;;;;;;;;
-500086.A;A great day for commerce, explorers and cartographers alike!;;;;;;;;;;;
+500086.A;A great day for commerce, explorers and cartographers alike!;;;;;;;;;;;;;
 500101.T;Following the Rivers;;;;;;;;;;;;;
 500101.D;Central Europe is dominated by 3 major rivers: the Rhine, the Elbe and our namesake, the Danube. Strategists and advisors are currently debating on which of these rivers we should focus on given the simmering tension in Europe in order to provide security and resources. The have come up with 3 options and it's now time to decide which one we should proceed with;;;;;;;;;;;;;
 500101.A;Advance up the Rhine to the Ruhr Valley!;;;;;;;;;;;;;
@@ -116,28 +116,28 @@ CONGR18.D;The reconquest and integration of the spanish colonies back under the 
 500101.C;Consolodate our hold on the Danube!;;;;;;;;;;;;;
 502001.T;Aftermath of the Ottoman Civil War;;;;;;;;;;;;;
 502001.D;With the dust not at all settled it is already becoming clear that we will need to reform and focus on one path in order to have any chance of restoring any pride in our nation. Question is what shall be do? The advisors to the sultan have come up with 3 options, which one should we choose?;;;;;;;;;;;;;
-502001.A;Restore our Rule over the Balkans!;;;;;;;;;;;;;;
-502001.B;Restore our Rule over Arabia and Egypt!;;;;;;;;;;;;;;;
-502001.C;Pursue the Turan ambition!;;;;;;;;;;;;;;;
-600001.T;The Return of Vinland;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600001.D;Vinland has retuned to Europe and is claiming the western shores of Scandinavia. We need to choose a response!§R (NOTE: Option A will not allow us to core Vinland or gain Vinlander as an accepted culture whilist Options B and C will!)§!;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600001.A;Option A: We will bide our time for now.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600001.B;Option B: We shall claim Vinland for ourselves once we deal with the invasions;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600001.C;Option C: Let us go to war right now and end this rebellion!;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600002.T;Loss of Scotland;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600002.D;When we decided to focus on and integrate the Baltic, it alienated our subjects in Scotland to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600002.A;But the Haggis...;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600003.T;Loss of Livonia;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600003.D;When we decided to focus on and integrate the British Isles, it alienated our subjects in Livonia to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600003.A;But the Core Ports...;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600004.T;Loss of Pomerania and Prussia;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600004.D;When we decided to focus on and integrate the British Isles, it alienated our subjects in Pomerania and Prussia to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600004.A;But the Swedes...;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600007.T;Congress of San Salvador;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600007.D;Now with the Spanish repelled, it is now time to decide what path our country should take. Mexican and Granadan dignitaries both argue for pushing our population advantage in order to establish a hegemon over Arcadia and Ameriga respectively whilist the Salvadorians instead suggest we prioritise stabilising and centralising our country. What shall we do?;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600007.A;Pursue Dominance over Arcadia;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600007.B;Pursue Dominance over Ameriga;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-600007.C;Centralise and Integrate the lands we already control;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+502001.A;Restore our Rule over the Balkans!;;;;;;;;;;;;;
+502001.B;Restore our Rule over Arabia and Egypt!;;;;;;;;;;;;;
+502001.C;Pursue the Turan ambition!;;;;;;;;;;;;;
+600001.T;The Return of Vinland;;;;;;;;;;;;;
+600001.D;Vinland has retuned to Europe and is claiming the western shores of Scandinavia. We need to choose a response!§R (NOTE: Option A will not allow us to core Vinland or gain Vinlander as an accepted culture whilist Options B and C will!)§!;;;;;;;;;;;;;
+600001.A;Option A: We will bide our time for now.;;;;;;;;;;;;;
+600001.B;Option B: We shall claim Vinland for ourselves once we deal with the invasions;;;;;;;;;;;;;
+600001.C;Option C: Let us go to war right now and end this rebellion!;;;;;;;;;;;;;
+600002.T;Loss of Scotland;;;;;;;;;;;;;
+600002.D;When we decided to focus on and integrate the Baltic, it alienated our subjects in Scotland to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;
+600002.A;But the Haggis...;;;;;;;;;;;;;
+600003.T;Loss of Livonia;;;;;;;;;;;;;
+600003.D;When we decided to focus on and integrate the British Isles, it alienated our subjects in Livonia to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;
+600003.A;But the Core Ports...;;;;;;;;;;;;;
+600004.T;Loss of Pomerania and Prussia;;;;;;;;;;;;;
+600004.D;When we decided to focus on and integrate the British Isles, it alienated our subjects in Pomerania and Prussia to the point where now, under new management, the people there and the wider global powers no longer see our claim to the land as legitimate.;;;;;;;;;;;;;
+600004.A;But the Swedes...;;;;;;;;;;;;;
+600007.T;Congress of San Salvador;;;;;;;;;;;;;
+600007.D;Now with the Spanish repelled, it is now time to decide what path our country should take. Mexican and Granadan dignitaries both argue for pushing our population advantage in order to establish a hegemon over Arcadia and Ameriga respectively whilist the Salvadorians instead suggest we prioritise stabilising and centralising our country. What shall we do?;;;;;;;;;;;;;
+600007.A;Pursue Dominance over Arcadia;;;;;;;;;;;;;
+600007.B;Pursue Dominance over Ameriga;;;;;;;;;;;;;
+600007.C;Centralise and Integrate the lands we already control;;;;;;;;;;;;;
 600008.T;The Purchase of Guiana?;;;;;;;;;;;;;
 600008.D;Stating Guiana's Proximity to them, we have been approached to sell Guiana. Shall We?;;;;;;;;;;;;;
 600008.A;Let's do it, it's worthless anyway;;;;;;;;;;;;;

@@ -129,7 +129,7 @@ country_event = {
 	}
 
 	option = {
-		name = "502001.E"
+		name = "502001E"
 		set_country_flag = tur_persia
 		capital = 876
 		add_accepted_culture = kurdish

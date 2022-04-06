@@ -1,55 +1,55 @@
-;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;
-CRH;Confederation of the Rhine;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-CRH_ADJ;Rheinish;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-CRH_proletarian_dictatorship;Commune of the Rhine;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-CRH_presidential_dictatorship;Rhienish State;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-CRH_fascist_dictatorship;Directorate of the Rhine;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-CRH_absolute_monarchy;Kingdom of the Rhine;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-ARP;Arpitania;;;;;;;;;;;;;x
-ARP_ADJ;Arpitan;;;;;;;;;;;;;x
-ARP_absolute_monarchy;Kingdom of Arles;;;;;;;;;;;;;x
-ARP_prussian_constitutionalism;Kingdom of Arles;;;;;;;;;;;;;x
-ARP_hms_government;Kingdom of Arles;;;;;;;;;;;;;x
-ARP_proletarian_dictatorship;Alpine Commune;;;;;;;;;;;;;x
-ARP_fascist_dictatorship;Directorate of Arles;;;;;;;;;;;;;x
-ARP_democracy;Arpitania;;;;;;;;;;;;;x
-HIS;Hispanic Commonwealth;;;;;;;;;;;;x
-HIS_ADJ;Hispanic;;;;;;;;;;;;x
-HIS_proletarian_dictatorship;Hispanic People's Union;;;;;;;;;;;;x
-HIS_presidential_dictatorship;Hispania;;;;;;;;;;;;x
-HIS_bourgeois_dictatorship;Hispania;;;;;;;;;;;;x
-HIS_fascist_dictatorship;Hispanic Empire;;;;;;;;;;;;x
-HIS_democracy;Hispanic Republic;;;;;;;;;;;;x
-TRP;The Triple Monarchy;;;;;;;;;;;;x
-TRP_ADJ;Anglois-Plantagent;;;;;;;;;;;;x
-TRP_proletarian_dictatorship;The United Communes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TRP_presidential_dictatorship;The Directorate of Paris-Londers-Orleans;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TRP_bourgeois_dictatorship;The Triple Republic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TRP_fascist_dictatorship;The Empire;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TRP_democracy;The Triple Republic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-WSF;Zapadoslavia;;;;;;;;;;;;x
-WSF_ADJ;West Slavic;;;;;;;;;;;;x
-WSF_absolute_monarchy;Kingdom of Zapadoslavia;;;;;;;;;;;;x
-WSF_prussian_constitutionalism;Kingdom of Zapadoslavia;;;;;;;;;;;;x
-WSF_hms_government;Zapadoslavia;;;;;;;;;;;;x
-WSF_proletarian_dictatorship;West Slavic People's Republic ;;;;;;;;;;;;x
-WSF_fascist_dictatorship;Wendish Empire;;;;;;;;;;;;x
-WSF_democracy;Zapadoslavia;;;;;;;;;;;;x
-NSE;North Sea Empire;;;;;;;;;;;;x
-NSE_ADJ;North Sea;;;;;;;;;;;;x
-NSE_absolute_monarchy;North Sea Empire;;;;;;;;;;;;;x
-NSE_prussian_constitutionalism;North Sea Empire;;;;;;;;;;;;;x
-NSE_hms_government;North Sea Empire;;;;;;;;;;;;;x
-NSE_proletarian_dictatorship;North Sea Union;;;;;;;;;;;;;x
-NSE_fascist_dictatorship;Empire of the North;;;;;;;;;;;;;x
-NSE_democracy;North Sea Federation;;;;;;;;;;;;;x
-NSE_presidential_dictatorship;North Sea Empire;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-BLT;Baltic Empire;;;;;;;;;;;;x
-BLT_ADJ;Baltic;;;;;;;;;;;;x
-BLT_absolute_monarchy;Baltic Empire;;;;;;;;;;;;;x
-BLT_prussian_constitutionalism;Baltic Empire;;;;;;;;;;;;;x
-BLT_hms_government;Baltic Empire;;;;;;;;;;;;;x
-BLT_proletarian_dictatorship;Baltic Socialist Union;;;;;;;;;;;;;x
-BLT_fascist_dictatorship;Baltic Imperium;;;;;;;;;;;;;x
-BLT_democracy;Baltic Federation;;;;;;;;;;;;;x
-BLT_presidential_dictatorship;Greater Hanseatic League;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+CRH;Confederation of the Rhine;;;;;;;;;;;;;
+CRH_ADJ;Rheinish;;;;;;;;;;;;;
+CRH_proletarian_dictatorship;Commune of the Rhine;;;;;;;;;;;;;
+CRH_presidential_dictatorship;Rhienish State;;;;;;;;;;;;;
+CRH_fascist_dictatorship;Directorate of the Rhine;;;;;;;;;;;;;
+CRH_absolute_monarchy;Kingdom of the Rhine;;;;;;;;;;;;;
+ARP;Arpitania;;;;;;;;;;;;;
+ARP_ADJ;Arpitan;;;;;;;;;;;;;
+ARP_absolute_monarchy;Kingdom of Arles;;;;;;;;;;;;;
+ARP_prussian_constitutionalism;Kingdom of Arles;;;;;;;;;;;;;
+ARP_hms_government;Kingdom of Arles;;;;;;;;;;;;;
+ARP_proletarian_dictatorship;Alpine Commune;;;;;;;;;;;;;
+ARP_fascist_dictatorship;Directorate of Arles;;;;;;;;;;;;;
+ARP_democracy;Arpitania;;;;;;;;;;;;;
+HIS;Hispanic Commonwealth;;;;;;;;;;;;;
+HIS_ADJ;Hispanic;;;;;;;;;;;;;
+HIS_proletarian_dictatorship;Hispanic People's Union;;;;;;;;;;;;;
+HIS_presidential_dictatorship;Hispania;;;;;;;;;;;;;
+HIS_bourgeois_dictatorship;Hispania;;;;;;;;;;;;;
+HIS_fascist_dictatorship;Hispanic Empire;;;;;;;;;;;;;
+HIS_democracy;Hispanic Republic;;;;;;;;;;;;;
+TRP;The Triple Monarchy;;;;;;;;;;;;;
+TRP_ADJ;Anglois-Plantagent;;;;;;;;;;;;;
+TRP_proletarian_dictatorship;The United Communes;;;;;;;;;;;;;
+TRP_presidential_dictatorship;The Directorate of Paris-Londers-Orleans;;;;;;;;;;;;;
+TRP_bourgeois_dictatorship;The Triple Republic;;;;;;;;;;;;;
+TRP_fascist_dictatorship;The Empire;;;;;;;;;;;;;
+TRP_democracy;The Triple Republic;;;;;;;;;;;;;
+WSF;Zapadoslavia;;;;;;;;;;;;;
+WSF_ADJ;West Slavic;;;;;;;;;;;;;
+WSF_absolute_monarchy;Kingdom of Zapadoslavia;;;;;;;;;;;;;
+WSF_prussian_constitutionalism;Kingdom of Zapadoslavia;;;;;;;;;;;;;
+WSF_hms_government;Zapadoslavia;;;;;;;;;;;;;
+WSF_proletarian_dictatorship;West Slavic People's Republic ;;;;;;;;;;;;;
+WSF_fascist_dictatorship;Wendish Empire;;;;;;;;;;;;;
+WSF_democracy;Zapadoslavia;;;;;;;;;;;;;
+NSE;North Sea Empire;;;;;;;;;;;;;
+NSE_ADJ;North Sea;;;;;;;;;;;;;
+NSE_absolute_monarchy;North Sea Empire;;;;;;;;;;;;;
+NSE_prussian_constitutionalism;North Sea Empire;;;;;;;;;;;;;
+NSE_hms_government;North Sea Empire;;;;;;;;;;;;;
+NSE_proletarian_dictatorship;North Sea Union;;;;;;;;;;;;;
+NSE_fascist_dictatorship;Empire of the North;;;;;;;;;;;;;
+NSE_democracy;North Sea Federation;;;;;;;;;;;;;
+NSE_presidential_dictatorship;North Sea Empire;;;;;;;;;;;;;
+BLT;Baltic Empire;;;;;;;;;;;;;
+BLT_ADJ;Baltic;;;;;;;;;;;;;
+BLT_absolute_monarchy;Baltic Empire;;;;;;;;;;;;;
+BLT_prussian_constitutionalism;Baltic Empire;;;;;;;;;;;;;
+BLT_hms_government;Baltic Empire;;;;;;;;;;;;;
+BLT_proletarian_dictatorship;Baltic Socialist Union;;;;;;;;;;;;;
+BLT_fascist_dictatorship;Baltic Imperium;;;;;;;;;;;;;
+BLT_democracy;Baltic Federation;;;;;;;;;;;;;
+BLT_presidential_dictatorship;Greater Hanseatic League;;;;;;;;;;;;;
