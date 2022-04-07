@@ -480,13 +480,19 @@ political_decisions = {
 		allow = {
 			NOT = { war = yes }
 			owns = 1121
-      owns = 1135
-      owns = 1127
-			OR = { QAJ = { exists = no } tag = QAJ }
-			OR = { ZND = { exists = no } tag = ZND }
+			owns = 1135
+			owns = 1127
+			#OR = {
+			#	QAJ = { exists = no }
+			#	QAJ = { all_core = { NOT = { owned_by = QAJ } } }
+			#}
+			#OR = {
+			#	ZND = { exists = no }
+			#	ZND = { all_core = { NOT = { owned_by = ZND } } }
+			#}
 		}
 		effect = {
-			change_tag = PER
+			PER = { all_core = { add_core = THIS } }
 			set_country_flag = turkish_persia
 			add_accepted_culture = persian
 			add_accepted_culture = mashriqi
