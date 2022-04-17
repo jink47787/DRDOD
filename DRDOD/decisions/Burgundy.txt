@@ -410,10 +410,12 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
+							OR = {
 							in_sphere = THIS
 							vassal_of = THIS
+							}
 						}
-						is_core = AUS
+						is_core = HUN
 					}
 				}
 			}
@@ -458,7 +460,6 @@ political_decisions = {
 						tag = HEK
 						tag = LIP
 					}
-					NOT = { tag = AUS }
 					OR = {
 						in_sphere = THIS
 						vassal_of = THIS
@@ -471,7 +472,7 @@ political_decisions = {
 			SGF = {
 				all_core = {
 					limit = {
-						NOT = { is_core = AUS }
+						NOT = { is_core = HUN }
 					}
 					add_core = CRH
 				}
