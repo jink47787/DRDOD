@@ -37,6 +37,8 @@ country_event = {
 	option = {
 		name = "650201.C"
 		set_country_flag = dual_integration
+		add_accepted_culture = breton
+		add_accepted_culture = welsh
 		ai_chance = {
 			factor = 34
 		}
