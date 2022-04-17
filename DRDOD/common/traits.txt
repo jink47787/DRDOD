@@ -6,7 +6,7 @@
 # defence = + or - on dice roll in combat. (like skill in eu3)
 # morale = % modifier on morale.
 # organisation = % bonus on org.
-# reconnaissance = % bonus on reconaissance.
+# reconnaissance = % bonus on reconaissance. #MaTi5893 can't spell reconnaissance
 # speed = % bonus on movement
 # attrition = penalty on attrition. (minusative is good)
 # experience = % bonus on experience gain.
@@ -729,4 +729,4 @@ background = {
     attack_0.22 = {
         reliability = -0.2
     }
-}	
+}
