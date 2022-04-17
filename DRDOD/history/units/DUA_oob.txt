@@ -47,7 +47,7 @@ leader = {
 	name = "Andrew Wright"
 	type = land
 	date = 1836.1.1
-	personality = defence_1.1
+	personality = defence_3.1
 	background = attack_1.1
 }
 
@@ -112,7 +112,7 @@ leader = {
 	type = sea
 	date = 1836.1.1
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_3.1
 }
 
 leader = {
