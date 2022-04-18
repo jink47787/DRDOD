@@ -50,7 +50,6 @@ political_decisions = {
 				AUS_771 = { add_core = THIS }
 				BOS_783 = { add_core = THIS }
 				AUS_780 = { add_core = THIS }
-				AUS_736 = { add_core = THIS }
 			set_country_flag = Hungarian_CRO
 		}
 		ai_will_do = {
@@ -250,10 +249,7 @@ political_decisions = {
 		potential = {
 			tag = HUN
 			NOT = { accepted_culture = slovene }
-			OR = {
-			accepted_culture = croat
-			has_country_flag = lesser_jagiellonian
-			}
+			has_country_flag = hun_balkan_focus
 		}
 		allow = {
 			owns = 768
@@ -317,10 +313,11 @@ political_decisions = {
 		effect = {
 			badboy = 10
 			add_accepted_culture = venetian
-				AUS_729 = { add_core = HUN }
-				731 = { add_core = HUN }
-				730 = { add_core = HUN }
-				734 = { add_core = HUN }
+				AUS_736 = { add_core = THIS }
+				AUS_729 = { add_core = THIS }
+				731 = { add_core = THIS }
+				730 = { add_core = THIS }
+				734 = { add_core = THIS }
 		}
 	}
 
@@ -341,6 +338,7 @@ political_decisions = {
 			set_country_flag = romanians_integrated
 			prestige = 10
 			add_accepted_culture = romanian
+			remove_accepted_culture = croat
 			any_pop = {
 				limit = {
 					culture = hungarian
