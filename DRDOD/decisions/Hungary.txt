@@ -272,12 +272,13 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			badboy = 7.5
+			badboy = 9
 			add_accepted_culture = serb
 			SER_794 = { add_core = THIS }
 			MON_2582 = { add_core = THIS }
 			TUR_803 = { add_core = THIS }
 			KOS_802 = { add_core = THIS }
+			TUR_853 = { add_core = THIS }
 		}
 	}
 
@@ -322,16 +323,10 @@ political_decisions = {
 	romanians_integrated = {
 		picture = embrace_minority
 		potential = {
-			OR = {
-				tag = HUN
-				tag = DNB
-				AND = {
-					tag = PLC
-					has_country_flag = lesser_jagiellonian
-				}
-			}
+			tag = HUN
 			NOT = { has_country_flag = romanians_integrated }
 			NOT = { has_country_flag = hun_balkans }
+			NOT = { has_country_flag = lesser_jagiellonian }
 		}
 		allow = {
 			nationalism_n_imperialism = 1
@@ -420,30 +415,46 @@ political_decisions = {
 			owns = 706
     }
     effect = {
-      set_country_flag = lesser_jagiellonian
-      SLV = {
-        all_core = {
-          add_core = THIS
-        }
-      }
-      HUN = {
-        all_core = {
-          limit = {
-            NOT = { is_core = YUG }
-            NOT = { is_core = WAL }
-            NOT = { is_core = MOL }
-          }
-          add_core = THIS
-        }
-      }
-      POL = {
-        all_core = {
-          add_core = THIS
-        }
-      }
-      add_accepted_culture = slovak
-      add_accepted_culture = hungarian
-      add_accepted_culture = polish
+		set_country_flag = lesser_jagiellonian
+		add_accepted_culture = slovak
+		add_accepted_culture = hungarian
+		add_accepted_culture = polish
+			RUS_360 = { add_core = THIS }
+			PLC_940 = { add_core = THIS }
+			AUS_702 = { add_core = THIS }
+			AUS_662 = { add_core = THIS }
+			RUS_710 = { add_core = THIS }
+			PRU_701 = { add_core = THIS }
+			PRU_690 = { add_core = THIS }
+			RUS_706 = { add_core = THIS }
+			RUS_707 = { add_core = THIS }
+			957 = { add_core = THIS }
+			956 = { add_core = THIS }
+			
     }
   }
+
+	lithuanian_integrated = {
+		picture = embrace_minority
+		potential = {
+				tag = HUN
+				has_country_flag = lesser_jagiellonian
+			NOT = { has_country_flag = hun_balkans }
+			NOT = { has_country_flag = romanians_integrated }
+			NOT = { has_country_flag = lithuanian_integrated }
+		}
+		allow = {
+			empiricism = 1
+			owns = 360
+		}
+		effect = {
+			badboy = 10
+			set_country_flag = lithuanian_integrated
+			prestige = 10
+			add_accepted_culture = lithuanian
+			add_accepted_culture = ashkenazi
+			RUS_360 = { add_core = THIS }
+			PLC_940 = { add_core = THIS }
+		}
+	}
 }
