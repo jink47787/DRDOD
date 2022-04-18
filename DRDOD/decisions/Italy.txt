@@ -488,7 +488,6 @@ political_decisions = {
 			prestige = 10
 			set_country_flag = north_italy
 			add_accepted_culture = north_italian
-			add_accepted_culture = central_italian
 			add_accepted_culture = south_italian
 			ITA = {
 				all_core = {
@@ -521,7 +520,6 @@ political_decisions = {
 	central_italian_union = {
 		potential = {
 			OR = {
-				primary_culture = central_italian
 				primary_culture = south_italian
 			}
 			NOT = { has_country_flag = central_italy }
@@ -535,7 +533,6 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			set_country_flag = central_italy
-			add_accepted_culture = central_italian
 			add_accepted_culture = north_italian
 			add_accepted_culture = south_italian
 			PAP_741 = { add_core = THIS } #Emilia-Romanga
@@ -602,7 +599,6 @@ political_decisions = {
 			prestige = 15
 			change_tag = ITA
 			add_accepted_culture = north_italian
-			add_accepted_culture = central_italian
 			add_accepted_culture = south_italian
 			add_accepted_culture = maltese
 			any_country = {

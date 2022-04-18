@@ -1,5 +1,5 @@
 capital = 746
-primary_culture = central_italian
+primary_culture = north_italian
 religion = catholic
 government = absolute_monarchy
 plurality = 15.0

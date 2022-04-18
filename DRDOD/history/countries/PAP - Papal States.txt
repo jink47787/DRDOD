@@ -1,6 +1,5 @@
 capital = 749
-primary_culture = central_italian
-culture = south_italian
+primary_culture = south_italian
 religion = catholic
 government = theocracy
 plurality = 15.0

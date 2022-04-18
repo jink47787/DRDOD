@@ -271,7 +271,6 @@ country_migration_target =
 		OR = {
 			THIS = { culture = catalan }
 			THIS = { culture = south_italian }
-			THIS = { culture = central_italian }
 			THIS = { culture = north_italian }
 			THIS = { culture = maltese }
 			THIS = { culture = venetian }
@@ -352,7 +351,6 @@ country_migration_target =
 		}
 		OR = {
 			THIS = { culture = north_italian }
-			THIS = { culture = central_italian }
 			THIS = { culture = south_italian }
 			THIS = { culture = venetian }
 			THIS = { culture = maltese }
