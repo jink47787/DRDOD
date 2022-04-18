@@ -189,6 +189,7 @@ political_decisions = {
 			771 = { is_core = THIS }
 			NOT = { has_country_flag = croatian_compromise }
 			NOT = { has_country_flag = lesser_jagiellonian }
+			NOT = { has_country_flag = romanians_integrated }
 		}
 		allow = {
 			nationalism_n_imperialism = 1
