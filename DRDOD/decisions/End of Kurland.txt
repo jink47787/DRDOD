@@ -17,14 +17,14 @@ political_decisions = {
 		effect = {
 			prestige = 15
 			badboy = 5
-				inherit = PSV
-				inherit = KRL
-				KRL = { all_core = { add_core = THIS } }
-			
-			ai_will_do = {
-				factor = 1
-				modifier = { factor = 0 badboy = 0.8 }
-			}
+			inherit = PSV
+			inherit = KRL
+			KRL = { all_core = { add_core = THIS } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0 badboy = 0.8 }
 		}
 	}
 }

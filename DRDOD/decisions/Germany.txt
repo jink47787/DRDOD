@@ -516,7 +516,6 @@ political_decisions = {
 			}
 		}
 	}
-}
 	
 	move_to_berlin = {
 

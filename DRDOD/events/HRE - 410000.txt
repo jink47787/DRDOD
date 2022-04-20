@@ -6,54 +6,45 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-	name = "410001.A" 
-	any_country = {
-        			limit = {
-					NOT = { tag = KRL }
-        				OR = {
-        					primary_culture = rheinish
-        					primary_culture = north_german
-        					primary_culture = south_german
-							primary_culture = swiss
-        				}
-        				in_sphere = THIS
-        			}	
-        			country_event = 410002
-        		}
-	any_owned = {
-		limit = { region = PRU_546 }
-		secede_province = POM
-		remove_core = THIS 
+	immediate = {
+		any_country = {
+			limit = {
+			NOT = { tag = KRL }
+				OR = {
+					primary_culture = rheinish
+					primary_culture = north_german
+					primary_culture = south_german
+					primary_culture = swiss
+				}
+				in_sphere = THIS
+			}	
+			diplomatic_influence = { who = THIS value = -200 }
+			diplomatic_influence = { who = BOH value = 200 }
 		}
-	any_owned = {
-		limit = { region = HOL_369 }
-		secede_province = HOL
+		BOH = { diplomatic_influence = { who = POM value = 200 } }
+		BOH = { diplomatic_influence = { who = HOL value = 200 } }
+		any_owned = {
+			limit = {
+				OR = {
+					region = PRU_546
+					region = SCA_544
+				}
+			}
+			remove_core = THIS
+			secede_province = POM
 		}
-	any_owned = {
-		limit = { region = SCA_544 }
-		secede_province = POM
-		remove_core = THIS
+		any_owned = {
+			limit = {
+				region = HOL_369
+			}
+			secede_province = HOL
 		}
-	BOH = { diplomatic_influence = { who = POM value = 200 } }
-	BOH = { diplomatic_influence = { who = HOL value = 200 } }
-	
 	}
 	
-}
-
-country_event = {
-        	id = 410002
-        	title = "410002.T"
-        	desc = "410002.D"
-
-        	is_triggered_only = yes
-
-        	option = {
-        		name = "410002.A"
-        		FROM = { diplomatic_influence = { who = THIS value = -200 } }
-        		BOH = { diplomatic_influence = { who = THIS value = 200 } }
-        	}
+	option = {
+		name = "410001.A"
+	}
+	
 }
 
 country_event = { 
@@ -63,15 +54,15 @@ country_event = {
 	picture = "rhapsody"
 	
 	trigger = { 
-	OR = { tag = HLR tag = BOH }
-	owns = 625 
-	romanticism = 1 
+		OR = { tag = HLR tag = BOH }
+		owns = 625 
+		romanticism = 1 
 	}
 	
 	fire_only_once = yes 
 	
 	option = { 
-	name = "410070.A"
-	prestige = 2
+		name = "410070.A"
+		prestige = 2
 	}
 }
