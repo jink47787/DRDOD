@@ -1,6 +1,6 @@
 political_decisions = {
 
-  dominium_maris_baltici = {
+	dominium_maris_baltici = {
 		potential = {
 			tag = SCA
 			NOT = { has_country_flag = baltic_claimed }
@@ -71,7 +71,7 @@ political_decisions = {
 		}
 	}
 
-  integrate_pomeranians = {
+	integrate_pomeranians = {
 		potential = {
 		tag = SCA
 			owns = 544
