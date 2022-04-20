@@ -2248,6 +2248,8 @@ centralize_hre_title;The Thousand Years' Reich;;;;;;;;;;;;;
 centralize_hre_desc;The Holy Roman Empire could have been the greatest power of the continent if it had been united. The previous emperor tried to centralize the various principalities during the Revolution but the Great German War forced him to withdraw its claims. But now we are strong enough to try the adventure once more and this time, maybe establish a Reich that will last a Thousand Years !§R\nThe time limit for forming the HRE will run out after the liberal revolutions in 1847.;;;;;;;;;;;;;
 move_to_frankfurt_title;Move the capital to Frankfurt;;;;;;;;;;;;;
 move_to_frankfurt_desc;Despite our efforts, the princes of the Empire did not accept our claim. We defeated them and we can rightfully be recognized Kaiser by the Germans ! Ein Reich, Ein Deustchland !;;;;;;;;;;;;;
+move_to_berlin_title;Move the capital to Berlin;;;;;;;;;;;;;
+move_to_berlin_desc;Despite our efforts, the princes of the Empire did not accept our claim. We defeated them and we can rightfully be recognized Kaiser by the Germans ! Ein Reich, Ein Deustchland !;;;;;;;;;;;;;
 form_elbian_confederation_title;Form the Confederation at the Elbe;;;;;;;;;;;;;
 form_elbian_confederation_desc;Although our ultimate goal would be to unify all germanic princes under the Holy Roman Empires banner, exteral opposition have proved exceptionally tough. With our current position we can create a confederation for just the northern germanic peoples, the Elbian Confederation!;;;;;;;;;;;;;
 integrate_prussia_title; Integration of Prussia;;;;;;;;;;;;;
