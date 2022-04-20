@@ -211,34 +211,34 @@ political_decisions = {
 	  	}
     }
     effect = {
-      change_tag = NET
-      primary_culture = dutch
-      remove_accepted_culture = burgundian
-	  	remove_accepted_culture = rheinish
-      prestige = -25
-      badboy = -10
-      any_owned = {
-        limit = { is_core = GNV }
-        secede_province = GNV
-        remove_core = THIS
-      }
-      any_owned = {
-        limit = { is_core = LRR }
-        secede_province = LRR
-        remove_core = THIS
-      }
-      any_owned = {
-        limit = { is_core = RHI }
-        secede_province = RHI
-        remove_core = THIS
-      }
-      any_owned = {
-        limit = { is_core = FRA }
-        secede_province = DUA
-        remove_core = THIS
-				add_core = LRR
-      }
-      BRG = { all_core = { remove_core = BRG } }
+			change_tag = NET
+			primary_culture = dutch
+				remove_accepted_culture = burgundian
+				remove_accepted_culture = rheinish
+		prestige = -25
+		badboy = -10
+			any_owned = {
+				limit = { is_core = GNV }
+				secede_province = GNV
+				remove_core = THIS
+			}
+				any_owned = {
+					limit = { is_core = LRR }
+					secede_province = LRR
+					remove_core = THIS
+				}
+					any_owned = {
+						limit = { is_core = RHI }
+						secede_province = RHI
+						remove_core = THIS
+					}
+							any_owned = {
+								limit = { is_core = FRA }
+								secede_province = DUA
+								remove_core = THIS
+								add_core = LRR
+							}
+	BRG = { all_core = { remove_core = BRG } }
     }
     ai_will_do = {
       factor = 0
@@ -358,8 +358,8 @@ political_decisions = {
 
 	become_arpitania_brg = {
     potential = {
-      tag = BRG
-      NOT = { exists = ARP }
+		tag = BRG
+			NOT = { exists = ARP }
 			NOT = { has_country_flag = annex_boers }
 			NOT = { has_global_flag = burgundy_france }
     }
@@ -468,16 +468,20 @@ political_decisions = {
 				}
 				country_event = 333458
 			}
-			WES = { all_core = { add_core = CRH } }
-			SGF = {
-				all_core = {
-					limit = {
-						NOT = { is_core = HUN }
-					}
-					add_core = CRH
-				}
-			}
-			SWI = { all_core = { add_core = CRH } }
+			PRU_581 = { add_core = CRH }
+			HES_566 = { add_core = CRH }
+			HAN_534 = { add_core = CRH }
+			PRU_575 = { add_core = CRH }
+			BAD_586 = { add_core = CRH }
+			WUR_589 = { add_core = CRH }
+			BAV_599 = { add_core = CRH }
+			BAV_595 = { add_core = CRH }
+			SWI_605 = { add_core = CRH }
+			SWI_603 = { add_core = CRH }
+			AUS_613 = { add_core = CRH }
+			AUS_619 = { add_core = CRH }
+			612 = { add_core = CRH }
+			735 = { add_core = CRH }
 			FRM_564 = { add_core = CRH } #Palatinate
 			BRG = { all_core = { remove_core = BRG } }
 			set_global_flag = confed_of_rhine_formed
@@ -492,6 +496,7 @@ political_decisions = {
 		potential = {
 			tag = CRH
 			NOT = { has_country_flag = integrate_danube_rhine }
+			NOT = { accepted_culture = south_german }
 		}
 		allow = {
 			revolution_n_counterrevolution = 1
