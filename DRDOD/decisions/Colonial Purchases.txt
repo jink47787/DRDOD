@@ -67,7 +67,6 @@ athesia_purchase = {
     war = no
     money = 250000
     OR = {
-      rank = 12
       tag = UBD
     }
     199 = {
@@ -192,7 +191,6 @@ habana_purchase = {
     war = no
     money = 300000
     OR = {
-      rank = 10
       tag = UBD
     }
     2209 = {
@@ -278,7 +276,6 @@ ayiti_purchase = {
     war = no
     money = 225000
     OR = {
-      rank = 12
       tag = UBD
     }
     2213 = {
@@ -361,7 +358,6 @@ jamaica_purchase = {
     war = no
     money = 150000
     OR = {
-      rank = 16
       tag = UBD
     }
     2217 = {
@@ -503,7 +499,6 @@ guiana_purchase = {
     war = no
     money = 150000
     OR = {
-      rank = 14
       tag = UBD
     }
     2240 = {

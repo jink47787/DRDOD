@@ -1429,7 +1429,7 @@ gas_defense_capability = {
 		}
 	}
 	effect = {
-		soldier_to_pop_loss = 0.02
+		gas_defence = yes
 	}
 }
 
