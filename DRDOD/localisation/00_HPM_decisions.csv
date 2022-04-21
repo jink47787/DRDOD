@@ -3031,7 +3031,7 @@ japanese_offer_desc;With our expansion being so successful, we might persuade th
 japanese_ainu_title;Annex the Ainu Protectorate;;;;;;;;;;;;;
 japanese_ainu_desc;As we plan to continue our colonisation efforts in the north, we should seize direct control over the Ainu territories.;;;;;;;;;;;;;
 man_in_the_castle_title;The Man in the High Castle;;;;;;;;;;;;;
-man_in_the_castle_desc;The Chinese colonists founded the Dong Guo federation long time ago and since then it has developed into a full-fledged country. But somehow they stand in way of establishing total control over the Pacific.;;;;;;;;;;;;;
+man_in_the_castle_desc;The Chinese colonists founded the Dong Guo federation long time ago and since then it has developed into a full-fledged country. But somehow they stand in way of establishing total control over the Pacific. §RCannot cooperate with Qingqu if this option is selected.;;;;;;;;;;;;;
 puppet_Manchuria_title;Organizing Manchukuo;;;;;;;;;;;;;
 puppet_Manchuria_desc;Our expansion has given us the rich lands of Manchuria. Their goods will be very important for our industry but the numerous local population could resist us. Let us establish a puppet state under the rule of a Manchu prince which will allow us to better control the local population.;;;;;;;;;;;;;
 organize_yakutia_title;Organizing Yakutia;;;;;;;;;;;;;

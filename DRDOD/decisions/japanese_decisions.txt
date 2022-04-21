@@ -9,11 +9,10 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			KOR = {
-				all_core = {
-						owned_by = THIS
-				}
-			}
+			owns = 1633
+			owns = 1624
+			owns = 1625
+			owns = 1619
 			state_n_government = 1
 		}
 		effect = {
@@ -326,14 +325,13 @@ political_decisions = {
 		}
 		allow = {
 			MCH = { all_core = { owned_by = THIS } }
-			revolution_n_counterrevolution = 1
+			phenomenology_n_hermeneutic = 1
 		}
 		effect = {
-			badboy = 10
+			badboy = 18
 			CHI_1 = { add_core = THIS }
 			CHI_2 = { add_core = THIS }
 			CHI_1567 = { add_core = THIS }
-			CHI_1516 = { add_core = THIS }
 			CHI_1569 = { add_core = THIS }
 			CHI_1566 = { add_core = THIS }
 			CHI_1476 = { add_core = THIS }
@@ -343,7 +341,6 @@ political_decisions = {
 			CHI_1611 = { add_core = THIS }
 			CHI_1608 = { add_core = THIS }
 			CHI_1487 = { add_core = THIS }
-			CHI_1494 = { add_core = THIS }
 			CHI_1496 = { add_core = THIS }
 			CHI_1493 = { add_core = THIS }
 			CHI_1498 = { add_core = THIS }
@@ -352,14 +349,15 @@ political_decisions = {
 			CHI_1499 = { add_core = THIS }
 			1604 = { add_core = THIS }
 			1502 = { add_core = THIS }
-			phenomenology_n_hermeneutic = 1
+			1494 = { add_core = THIS }
+			1497 = { add_core = THIS }
 			add_accepted_culture = korean
 			set_country_flag = into_china_proper
 		}
 		ai_will_do = {
-    	factor = 1
-      modifier = { factor = 0 badboy = 0.6 }
-  	}
+			factor = 1
+			modifier = { factor = 0 badboy = 0.6 }
+		}
 	}
 
 	japan_conquer_taiwan = {
