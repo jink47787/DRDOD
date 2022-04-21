@@ -19,11 +19,10 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			set_country_flag = koreaisjapanese
-			KOR = {
-				all_core = {
-						add_core = THIS
-				}
-			}
+			KOR_1635 = { add_core = THIS }
+			KOR_1624 = { add_core = THIS }
+			KOR_1627 = { add_core = THIS }
+			KOR_1619 = { add_core = THIS }
 		}
 	}
 
@@ -307,13 +306,16 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 10
-			MCH = { all_core = { add_core = THIS } }
+			CHI_1082 = { add_core = THIS }
+			CHI_1553 = { add_core = THIS }
+			CHI_1481 = { add_core = THIS }
+			CHI_5 = { add_core = THIS }
 			set_country_flag = strike_north
 		}
 		ai_will_do = {
-    	factor = 1
-      modifier = { factor = 0 badboy = 0.6 }
-  	}
+			factor = 1
+			modifier = { factor = 0 badboy = 0.6 }
+		}
 	}
 
 	japan_invade_china_proper = {
@@ -330,39 +332,33 @@ political_decisions = {
 			badboy = 10
 			CHI_1 = { add_core = THIS }
 			CHI_2 = { add_core = THIS }
-			CHI_1614 = { add_core = THIS }
-			CHI_1618 = { add_core = THIS }
+			CHI_1567 = { add_core = THIS }
+			CHI_1516 = { add_core = THIS }
+			CHI_1569 = { add_core = THIS }
+			CHI_1566 = { add_core = THIS }
+			CHI_1476 = { add_core = THIS }
+			CHI_1539 = { add_core = THIS }
+			CHI_1538 = { add_core = THIS }
+			CHI_1606 = { add_core = THIS }
+			CHI_1611 = { add_core = THIS }
+			CHI_1608 = { add_core = THIS }
+			CHI_1487 = { add_core = THIS }
+			CHI_1494 = { add_core = THIS }
+			CHI_1496 = { add_core = THIS }
+			CHI_1493 = { add_core = THIS }
+			CHI_1498 = { add_core = THIS }
+			CHI_1495 = { add_core = THIS }
+			CHI_2632 = { add_core = THIS }
+			CHI_1499 = { add_core = THIS }
+			1604 = { add_core = THIS }
+			1502 = { add_core = THIS }
+			phenomenology_n_hermeneutic = 1
 			add_accepted_culture = korean
 			set_country_flag = into_china_proper
 		}
 		ai_will_do = {
     	factor = 1
       modifier = { factor = 0 badboy = 0.6 }
-  	}
-	}
-
-	japan_conquer_china = {
-		potential = {
-			tag = JAP
-			has_country_flag = into_china_proper
-			NOT = { has_country_flag = conquer_china }
-		}
-		allow = {
-			year = 1910
-			owns = 1612
-			owns = 2221	
-			owns = 1550
-			owns = 1577
-		}
-		effect = {
-			badboy = 10
-			MCK = { all_core = { add_core = THIS } }
-			add_accepted_culture = manchu
-			set_country_flag = conquer_china
-		}
-		ai_will_do = {
-    	factor = 1
-      modifier = { factor = 0 badboy = 0.1 }
   	}
 	}
 
@@ -380,9 +376,9 @@ political_decisions = {
 			set_country_flag = invade_formosa
 		}
 		ai_will_do = {
-    	factor = 1
-      modifier = { factor = 0 badboy = 0.8 }
-  	}
+			factor = 1
+			modifier = { factor = 0 badboy = 0.8 }
+		}
 	}
 
 	japanese_imperialism_christinia = {
@@ -420,45 +416,19 @@ political_decisions = {
 			NET_1426 = { add_core = JAP }
 			BRU_1394 = { add_core = JAP }
 			NET_1423 = { add_core = JAP }
-			AST_1097 = {
-				add_core = JAP
-			}
-			NET_1451 = {
-				add_core = JAP
-			}
-			AST_2529 = {
-				add_core = JAP
-			}
-			AST_2534 = {
-				add_core = JAP
-			}
-			AST_2454 = {
-				add_core = JAP
-			}
-			SPA_2517 = {
-				add_core = JAP
-			}
-			JAP_1654 = {
-				add_core = JAP
-			}
-			AST_2527 = {
-				add_core = JAP
-			}
-			AST_2543 = {
-				add_core = JAP
-			}
-			BRZ_2540 = {
-				add_core = JAP
-			}
-			FRA_1097 = {
-				add_core = JAP
-			}
-			SA_7 = {
-				add_core = JAP
-			}
-			HAW_658 = {
-				add_core = JAP
-			}
+			AST_1097 = { add_core = JAP }
+			NET_1451 = { add_core = JAP }
+			AST_2529 = { add_core = JAP }
+			AST_2534 = { add_core = JAP }
+			AST_2454 = { add_core = JAP }
+			SPA_2517 = { add_core = JAP }
+			JAP_1654 = { add_core = JAP }
+			AST_2527 = { add_core = JAP }
+			AST_2543 = { add_core = JAP }
+			BRZ_2540 = { add_core = JAP }
+			FRA_1097 = { add_core = JAP }
+			SA_7 = { add_core = JAP }
+			HAW_658 = { add_core = JAP }
 			1499 = { add_core = JAP }
 			add_accepted_culture = dayak
 			add_accepted_culture = moluccan
@@ -481,7 +451,7 @@ political_decisions = {
 			NOT = { has_country_flag = invade_austral }
 		}
 		allow = {
-			year = 1900
+			phenomenology_n_hermeneutic = 1
 		}
 		effect = {
 			badboy = 15
