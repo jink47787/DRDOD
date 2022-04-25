@@ -1,6 +1,6 @@
 owner = TNG
 controller = TNG
 add_core = TNG
-trade_goods = tea
+trade_goods = fish
 terrain = plains
 life_rating = 40
