@@ -62,7 +62,7 @@ life_needs = {
 	wool =  1
 	fish =  1
 	fruit =  1
-	grain =  2.5
+	grain =  2
 }
 
 country_migration_target =
