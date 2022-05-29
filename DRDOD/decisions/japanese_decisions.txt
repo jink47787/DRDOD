@@ -22,6 +22,7 @@ political_decisions = {
 			KOR_1624 = { add_core = THIS }
 			KOR_1627 = { add_core = THIS }
 			KOR_1619 = { add_core = THIS }
+			badboy = 17
 		}
 	}
 
