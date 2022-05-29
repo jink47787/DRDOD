@@ -289,38 +289,4 @@ powerful_HRE = {
 		NOT = { year = 1849 }
 	}
 	prestige = -0.50
-}
-
-german_struggle = {
-	trigger = {
-		AND = {
-			OR = {
-				primary_culture = south_german
-				primary_culture = rheinish
-				primary_culture = north_german
-				primary_culture = pomeranian
-				primary_culture = swiss
-			}
-			NOT = { tag = CHR }
-		}
-		NOT = { year = 1860 }
-	}
-	mobilisation_size = 0.03
-}
-
-balkan_struggle = {
-	trigger = {
-		OR = {
-			primary_culture = slovene
-			primary_culture = croat
-			primary_culture = bosniak
-			primary_culture = serbian
-			primary_culture = bulgarian
-			primary_culture = romanian
-			primary_culture = albanian
-			primary_culture = greek
-		}
-		NOT = { year = 1860 }
-	}
-	mobilisation_size = 0.03
-}
+}`

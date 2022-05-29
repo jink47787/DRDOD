@@ -32,7 +32,7 @@ army = {
 	regiment = {
 		name= "3. Royal infantry"
 		type = infantry
-		home = 1635
+		home = 1628
 	}
   
   regiment = {
