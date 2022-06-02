@@ -278,7 +278,6 @@ political_decisions = {
 			SER_794 = { add_core = THIS }
 			MON_2582 = { add_core = THIS }
 			TUR_803 = { add_core = THIS }
-			KOS_802 = { add_core = THIS }
 			TUR_853 = { add_core = THIS }
 		}
 	}

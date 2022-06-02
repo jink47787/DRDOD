@@ -78,14 +78,13 @@ political_decisions = {
 		allow = {
 			war = no
 			is_vassal = no
-      ALB = { all_core = { owned_by = THIS } }
+			ALB = { all_core = { owned_by = THIS } }
 		}
 		effect = {
 			set_country_flag = claim_greater_albania
 			MON_2582 = { add_core = ALB } #Montenegro
 			TUR_803 = { add_core = ALB } #Southern Serbia
-      GRE_826 = { add_core = ALB } #Ionian Islands
-      GRE_837 = { add_core = ALB } #Epirus
+			GRE_826 = { add_core = ALB } #Ionian Islands
 		}
 	}
 
@@ -144,33 +143,32 @@ political_decisions = {
   greater_bulgaria = {
 		picture = greater_bulgaria
 		potential = {
-      OR = {
-			   tag = BUL
-         AND = {
-            tag = MAC
-            has_country_flag = macedon_serb
-        }
-      }
-			NOT = { has_country_flag = greater_bulgaria_claimed }
+			OR = {
+				tag = BUL
+				AND = {
+					tag = MAC
+					has_country_flag = macedon_serb
+				}
+			}
+				NOT = { has_country_flag = greater_bulgaria_claimed }
 		}
 		allow = {
 			war = no
 			BUL = { all_core = { owned_by = THIS } }
-      state_n_government = 1
+			state_n_government = 1
 		}
 		effect = {
 			set_country_flag = greater_bulgaria_claimed
 			badboy = 10
 			TUR_859 = { add_core = BUL } #Eastern Thrace
 			TUR_860 = { add_core = BUL } #Constantinople
-      TUR_819 = { add_core = BUL } #West Macedonia
-      TUR_803 = { add_core = BUL } #Southern Serbia
-      KOS_802 = { add_core = BUL } #Kosovo
+			TUR_819 = { add_core = BUL } #West Macedonia
+			TUR_803 = { add_core = BUL } #Southern Serbia
 		}
-    ai_will_do = {
-    	factor = 1
-      modifier = { factor = 0 badboy = 0.6 }
-  	}
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0 badboy = 0.6 }
+		}
 	}
 
   integrate_greeks_bul = {
@@ -193,56 +191,54 @@ political_decisions = {
     }
   }
 
-  integrate_albanians_bul = {
-    potential = {
-      OR = {
-        tag = BUL
-        tag = MAC
-      }
-      accepted_culture = greek
-      has_country_flag = greater_bulgaria_claimed
-      NOT = { accepted_culture = albanian }
-    }
-    allow = {
-      owns = 849
-      owns = 802
-    }
-    effect = {
-      add_accepted_culture = albanian
-      TUR_853 = { add_core = THIS } #Albania
-      KOS_802 = { add_core = THIS } #Kosovo
-    }
-  }
+	integrate_albanians_bul = {
+		potential = {
+			OR = {
+				tag = BUL
+				tag = MAC
+			}
+			accepted_culture = greek
+			has_country_flag = greater_bulgaria_claimed
+			NOT = { accepted_culture = albanian }
+		}
+		allow = {
+			owns = 849
+			owns = 802
+		}
+		effect = {
+			add_accepted_culture = albanian
+			TUR_853 = { add_core = THIS } #Albania
+		}
+	}
 
-  integrate_serbs_bul = {
-    potential = {
-      OR = {
-        tag = BUL
-        tag = MAC
-      }
-      NOT = { accepted_culture = turkish }
-      has_country_flag = greater_bulgaria_claimed
-      NOT = { accepted_culture = serb }
-    }
-    allow = {
-      owns = 802
-      owns = 798
-      owns = 794
-      owns = 2583
-      OR = {
-        owns = 783
-        owns = 2583
-      }
-    }
-    effect = {
-      add_accepted_culture = serb
-      KOS_802 = { add_core = THIS } #Kosovo
-      TUR_803 = { add_core = THIS } #Southern Serbia
-      SER_794 = { add_core = THIS } #Northern Serbia
-      AUS_777 = { add_core = THIS } #Slavonia
-      BOS_783 = { add_core = THIS } #Bosnia
-    }
-  }
+	integrate_serbs_bul = {
+		potential = {
+			OR = {
+				tag = BUL
+				tag = MAC
+			}
+			NOT = { accepted_culture = turkish }
+			has_country_flag = greater_bulgaria_claimed
+			NOT = { accepted_culture = serb }
+		}
+		allow = {
+			owns = 802
+			owns = 798
+			owns = 794
+			owns = 2583
+			OR = {
+				owns = 783
+				owns = 2583
+			}
+		}
+		effect = {
+			add_accepted_culture = serb
+			TUR_803 = { add_core = THIS } #Southern Serbia
+			SER_794 = { add_core = THIS } #Northern Serbia
+			AUS_777 = { add_core = THIS } #Slavonia
+			BOS_783 = { add_core = THIS } #Bosnia
+		}
+	}
 
   integrate_turks_bul = {
     potential = {
