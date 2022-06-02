@@ -354,16 +354,16 @@ political_decisions = {
 			set_country_flag = elbe_acc
 			add_accepted_culture = north_german
 			add_accepted_culture = pomeranian
-			PRU_546 = { add_core = CAE }	#Hinterpommern
-			SCA_544 = { add_core = CAE }	#Mecklenburg
-			HOL_369 = { add_core = CAE }	#Holstein
-			HAN_532 = { add_core = CAE }	#Luneburg
-			HAM_528 = { add_core = CAE }	#Hanover
-			SAX_1 = { add_core = CAE }		#Thuringia
-			PRU_581 = { add_core = CAE }  #Westfalen
-			PRU_553 = { add_core = CAE }	#Anhalt
-			SAX_558 = { add_core = CAE }	#Saxony
-			PRU_549 = { add_core = CAE }	#Brandenburg
+			PRU_546 = { add_core = THIS }	#Hinterpommern
+			SCA_544 = { add_core = THIS }	#Mecklenburg
+			HOL_369 = { add_core = THIS }	#Holstein
+			HAN_532 = { add_core = THIS }	#Luneburg
+			HAM_528 = { add_core = THIS }	#Hanover
+			SAX_1 = { add_core = THIS }		#Thuringia
+			PRU_581 = { add_core = THIS }  #Westfalen
+			PRU_553 = { add_core = THIS }	#Anhalt
+			SAX_558 = { add_core = THIS }	#Saxony
+			PRU_549 = { add_core = THIS }	#Brandenburg
 		}
 	}
 
@@ -386,7 +386,7 @@ political_decisions = {
 			add_accepted_culture = south_german
 			add_accepted_culture = swiss
 			SGF = { all_core = { add_core = THIS } }
-			FRM_564 = { add_core = CAE }	#Palatinate
+			FRM_564 = { add_core = THIS }	#Palatinate
 		}
 	}
 
@@ -489,6 +489,7 @@ political_decisions = {
 		potential = {
 			tag = HLR
 			NOT = { has_country_flag = frankfurt_unify }
+			NOT = { has_country_flag = berlin_unify }
 		}
 
 		allow = {
