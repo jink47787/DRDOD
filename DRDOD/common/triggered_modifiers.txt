@@ -289,4 +289,4 @@ powerful_HRE = {
 		NOT = { year = 1849 }
 	}
 	prestige = -0.50
-}`
+}
