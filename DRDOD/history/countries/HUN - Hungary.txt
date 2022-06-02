@@ -50,6 +50,8 @@ upper_house = {
 	communist = 0
 }
 
+decision = holy_crown_HUN
+
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
