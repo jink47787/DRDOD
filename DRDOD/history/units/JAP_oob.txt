@@ -29,7 +29,7 @@ DNG = {
 }
 
 leader = {
-	name = "No-miya Uehara"
+	name = "No-miya Morbehara"
 	type = land
 	date = 1836.1.1
 	personality = defence_3.1
@@ -37,7 +37,7 @@ leader = {
 }
 
 leader = {
-	name = "Saigo Takamori"
+	name = "Saigo Takamorbi"
 	type = land
 	date = 1836.1.1
 	personality = defence_1.1
@@ -93,7 +93,7 @@ leader = {
 }
 
 leader = {
-	name = "Osami Nagano"
+	name = "Isoroku Yamamoto"
 	type = sea
 	date = 1836.1.1
 	personality = defence_1.1
@@ -201,7 +201,7 @@ army = {
 	regiment = {
 		name= "1.hussar"
 		type = hussar
-		home = 1619
+		home = 1635
 	}
 
 	regiment = {

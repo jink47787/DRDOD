@@ -50,7 +50,7 @@ army = {
 	regiment = {
 		name= "1. infantry"
 		type = infantry
-		home = 1635
+		home = 1619
 	}   
 	regiment = {
 		name= "2. infantry"
@@ -66,7 +66,7 @@ army = {
 	regiment = {
 		name= "1. hussar"
 		type = hussar
-		home = 1635
+		home = 1619
 	}
 
 }
