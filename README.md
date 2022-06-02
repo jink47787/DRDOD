@@ -3,6 +3,6 @@ This mod was created by me (dr) as I liked the extra Rileyo stuff, but wanted a 
 
 -------------CREDITS----------
 
-Lead Dev: Zoomer
-Lead Bug Creator: Doni
-Guy that created the repo: dr
+* Lead Dev: Zoomer
+* Lead Bug Creator: Doni
+* Guy that created the repo: dr
