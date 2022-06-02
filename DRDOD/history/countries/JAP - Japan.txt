@@ -6,7 +6,7 @@ religion = shinto
 government = prussian_constitutionalism
 plurality = 10.0
 nationalvalue = nv_autocracy
-literacy = 0.30
+literacy = 0.43
 civilized = yes
 prestige = 25
 
@@ -52,6 +52,7 @@ upper_house = {
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
+military_staff_system = 1
 army_command_principle = 1
 post_nelsonian_thought = 1
 clipper_design = 1

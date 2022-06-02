@@ -102,7 +102,7 @@ leader = {
 
 army = {
 	name = "Army of the Emperor"
-	location = 1661
+	location = 1635
 	regiment = {
 		name= "1.Kyoto"
 		type = infantry
@@ -220,7 +220,7 @@ army = {
 
 army = {
 	name = "Army of Gensui Terauchi"
-	location = 1649
+	location = 1632
 	regiment = {
 		name= "1.Taegu"
 		type = infantry
